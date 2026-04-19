@@ -1,0 +1,240 @@
+/* ─────────────────────────────────────────────────────────────────
+   PRINT / PDF OPTIMIZATION
+   El usuario hace Ctrl+P (o Cmd+P) -> Save as PDF
+   Invierte a light theme para ahorro de tinta y mejor legibilidad
+   ───────────────────────────────────────────────────────────────── */
+
+@media print {
+  /* Page setup */
+  @page {
+    size: A4;
+    margin: 18mm 14mm 16mm;
+  }
+
+  /* Force light colors for printing */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  html, body {
+    background: white !important;
+    color: #111 !important;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  /* ─── Hide non-essential elements ─── */
+  .topbar,
+  .audit-subbar,
+  .audit-sidebar,
+  .site-foot,
+  .pdf-btn,
+  .no-print {
+    display: none !important;
+  }
+
+  /* ─── Layout reset ─── */
+  .audit-layout {
+    display: block !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .audit-main {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  .page { padding: 0 !important; max-width: 100% !important; }
+
+  /* ─── Force open all collapsed sections ─── */
+  .a-section.closed .a-sec-body,
+  .a-section .a-sec-body {
+    display: block !important;
+  }
+  .toggle-icon { display: none !important; }
+  .a-sec-head { cursor: default !important; }
+
+  /* ─── Typography ─── */
+  .audit-title {
+    font-size: 22pt !important;
+    color: #000 !important;
+    margin-bottom: 4pt;
+  }
+  .audit-subtitle {
+    color: #444 !important;
+    font-size: 11pt !important;
+  }
+  h1, h2, h3, h4, h5 { color: #000 !important; }
+  p, span, div, li, td, th { color: #222 !important; }
+
+  .a-sec-title { font-size: 15pt !important; color: #000 !important; }
+  .a-sec-num {
+    background: #f3f6ee !important;
+    border-color: #d4e296 !important;
+    color: #5c7a0a !important;
+  }
+
+  .sub-h {
+    color: #444 !important;
+    font-size: 9pt !important;
+  }
+  .sub-h::after { background: #ccc !important; }
+
+  /* ─── Cards and containers ─── */
+  .overview,
+  .info-card,
+  .issue,
+  .action,
+  .opp,
+  .subscore,
+  .sprint-card,
+  .report-card,
+  .tbl-wrap {
+    background: white !important;
+    border-color: #d0d4d6 !important;
+    color: #222 !important;
+    box-shadow: none !important;
+  }
+
+  .overview::before { display: none !important; }
+
+  /* ─── Scores (keep color coding) ─── */
+  .score-big,
+  .donut-num strong { color: #d97706 !important; }
+
+  .sns-g, .subscore-val[data-state="g"] { color: #16a34a !important; }
+  .sns-y, .subscore-val[data-state="y"] { color: #ca8a04 !important; }
+  .sns-o, .subscore-val[data-state="o"] { color: #d97706 !important; }
+  .sns-r, .subscore-val[data-state="r"] { color: #dc2626 !important; }
+
+  .subscore {
+    background: #fafafa !important;
+    border-color: #e5e7eb !important;
+  }
+  .subscore-lbl { color: #666 !important; }
+  .subscore-val { color: #222 !important; }
+
+  /* ─── Tables ─── */
+  .tbl th {
+    background: #f3f4f6 !important;
+    color: #333 !important;
+    border-bottom-color: #d0d4d6 !important;
+  }
+  .tbl td {
+    border-bottom-color: #e5e7eb !important;
+    color: #222 !important;
+  }
+  .tbl td code,
+  .action-d code,
+  .issue-desc code,
+  .info-card .v code {
+    background: #f3f6ee !important;
+    color: #5c7a0a !important;
+    border: 1px solid #e5e7eb;
+  }
+
+  /* ─── Issue color coding (preserve) ─── */
+  .issue { border-left-width: 4px !important; }
+  .issue.crit { border-left-color: #dc2626 !important; }
+  .issue.high { border-left-color: #d97706 !important; }
+  .issue.med { border-left-color: #ca8a04 !important; }
+  .issue.low { border-left-color: #9ca3af !important; }
+  .issue.ok { border-left-color: #16a34a !important; }
+
+  .issue-title { color: #111 !important; font-weight: 700; }
+  .issue-desc { color: #333 !important; }
+
+  /* ─── Priority badges (keep color) ─── */
+  .prio-badge { border: 1px solid currentColor; padding: 1px 6px !important; }
+  .pb-crit { background: #fef2f2 !important; color: #dc2626 !important; }
+  .pb-high { background: #fffbeb !important; color: #d97706 !important; }
+  .pb-med { background: #fefce8 !important; color: #ca8a04 !important; }
+  .pb-low { background: #f9fafb !important; color: #6b7280 !important; }
+  .pb-ok { background: #f0fdf4 !important; color: #16a34a !important; }
+  .pb-info { background: #eff6ff !important; color: #2563eb !important; }
+
+  /* ─── Action plan ─── */
+  .action {
+    background: #fafafa !important;
+    border-color: #e5e7eb !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .action-t { color: #000 !important; }
+  .action-d { color: #333 !important; }
+  .action-time { color: #666 !important; }
+  .action-n {
+    border: 1px solid currentColor;
+  }
+  .an-c { background: #fef2f2 !important; color: #dc2626 !important; }
+  .an-h { background: #fffbeb !important; color: #d97706 !important; }
+  .an-m { background: #fefce8 !important; color: #ca8a04 !important; }
+  .an-l { background: #f9fafb !important; color: #6b7280 !important; }
+
+  .plan-ghead-c { color: #dc2626 !important; }
+  .plan-ghead-h { color: #d97706 !important; }
+  .plan-ghead-m { color: #ca8a04 !important; }
+  .plan-ghead-l { color: #6b7280 !important; }
+  .plan-ghead::after { background: #d0d4d6 !important; }
+
+  /* ─── Page breaks ─── */
+  .a-section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 18pt;
+  }
+  .overview {
+    page-break-after: avoid;
+  }
+  .plan-group {
+    page-break-inside: avoid;
+  }
+
+  /* ─── Print header (every page) ─── */
+  .audit-title-block {
+    border-bottom: 1.5pt solid #333 !important;
+    padding-bottom: 10pt;
+    margin-bottom: 16pt;
+  }
+  .audit-title-block::after {
+    content: attr(data-print-meta);
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8pt;
+    color: #666;
+    margin-top: 6pt;
+  }
+
+  /* ─── Show print footer ─── */
+  .print-footer {
+    display: block !important;
+    margin-top: 20pt;
+    padding-top: 10pt;
+    border-top: 1px solid #ccc;
+    font-size: 9pt;
+    color: #666;
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Expand URLs for offline reading */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #777;
+    word-break: break-all;
+  }
+  .no-url a::after { content: ""; }
+
+  /* ─── Accent tweaks ─── */
+  .audit-tags .tag-chip {
+    background: white !important;
+    border-color: #d0d4d6 !important;
+    color: #444 !important;
+  }
+}
+
+/* Print footer is hidden on screen */
+.print-footer { display: none; }

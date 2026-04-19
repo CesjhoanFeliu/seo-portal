@@ -1,0 +1,83 @@
+---
+layout: default
+---
+{% assign client = site.data.clients[page.client_slug] %}
+{% assign scores = client.audit_scores %}
+
+<!-- ═══════ SUB-HEADER (breadcrumb + PDF) ═══════ -->
+<div class="audit-subbar">
+  <div class="breadcrumb">
+    <a href="{{ '/auditorias/' | append: page.client_slug | append: '/' | relative_url }}">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:14px;height:14px;"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"/></svg>
+      Dashboard
+    </a>
+    <span class="breadcrumb-sep">/</span>
+    <span>Technical Audit · SEO</span>
+    <span class="breadcrumb-sep">/</span>
+    <span class="breadcrumb-cur">{{ client.name }}</span>
+  </div>
+
+  <button id="pdf-btn" class="pdf-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+    Download PDF
+  </button>
+</div>
+
+<div class="audit-layout">
+
+  <!-- ═══════ SIDEBAR ═══════ -->
+  <aside class="audit-sidebar no-print">
+    <div class="side-label">SEO Audit</div>
+    <div class="side-domain">{{ client.domain }}</div>
+
+    <div class="score-block">
+      <div class="score-big">{{ scores.global }}</div>
+      <div class="score-lbl">SEO Health</div>
+      <div class="score-status">
+        {% if scores.global >= 85 %}Excellent
+        {% elsif scores.global >= 70 %}Good
+        {% elsif scores.global >= 50 %}Needs Improvement
+        {% else %}Critical
+        {% endif %}
+      </div>
+    </div>
+
+    <nav class="side-nav">
+      <a href="#overview" class="active">Executive Summary</a>
+      <a href="#tecnico">Technical SEO <span class="side-nav-score sns-{% if scores.technical >= 70 %}g{% elsif scores.technical >= 50 %}y{% elsif scores.technical >= 35 %}o{% else %}r{% endif %}">{{ scores.technical }}</span></a>
+      <a href="#onpage">On-Page SEO <span class="side-nav-score sns-{% if scores.onpage >= 70 %}g{% elsif scores.onpage >= 50 %}y{% elsif scores.onpage >= 35 %}o{% else %}r{% endif %}">{{ scores.onpage }}</span></a>
+      <a href="#schema">Schema <span class="side-nav-score sns-{% if scores.schema >= 70 %}g{% elsif scores.schema >= 50 %}y{% elsif scores.schema >= 35 %}o{% else %}r{% endif %}">{{ scores.schema }}</span></a>
+      <a href="#offpage">Off-Page &amp; Authority <span class="side-nav-score sns-{% if scores.offpage >= 70 %}g{% elsif scores.offpage >= 50 %}y{% elsif scores.offpage >= 35 %}o{% else %}r{% endif %}">{{ scores.offpage }}</span></a>
+      <a href="#contenido">Content &amp; E-E-A-T <span class="side-nav-score sns-{% if scores.content >= 70 %}g{% elsif scores.content >= 50 %}y{% elsif scores.content >= 35 %}o{% else %}r{% endif %}">{{ scores.content }}</span></a>
+      <a href="#rendimiento">Performance (CWV) <span class="side-nav-score sns-{% if scores.performance >= 70 %}g{% elsif scores.performance >= 50 %}y{% elsif scores.performance >= 35 %}o{% else %}r{% endif %}">{{ scores.performance }}</span></a>
+      <a href="#ai">AI &amp; GEO Readiness <span class="side-nav-score sns-{% if scores.ai_geo >= 70 %}g{% elsif scores.ai_geo >= 50 %}y{% elsif scores.ai_geo >= 35 %}o{% else %}r{% endif %}">{{ scores.ai_geo }}</span></a>
+      <a href="#sitemap">Sitemap Analysis</a>
+      <a href="#local">Local SEO <span class="side-nav-score sns-{% if scores.local >= 70 %}g{% elsif scores.local >= 50 %}y{% elsif scores.local >= 35 %}o{% else %}r{% endif %}">{{ scores.local }}</span></a>
+      <a href="#competencia">Competitive Analysis</a>
+      <a href="#plan">Action Plan <span class="side-nav-score sns-b">{{ page.total_tasks | default: '—' }}</span></a>
+    </nav>
+  </aside>
+
+  <!-- ═══════ MAIN CONTENT ═══════ -->
+  <main class="audit-main">
+
+    <div class="audit-title-block" data-print-meta="{{ client.domain }} · Audit generated on {{ client.audit_date }}">
+      <h1 class="audit-title">SEO Audit 360°</h1>
+      <p class="audit-subtitle">Comprehensive analysis covering Technical SEO, On-Page, Off-Page, Content, E-E-A-T, Performance, AI/GEO, Local and a prioritized Action Plan.</p>
+      <div class="audit-tags">
+        <span class="tag-chip">{{ client.domain }}</span>
+        <span class="tag-chip">{{ client.audit_date }}</span>
+        <span class="tag-chip">{{ client.stack }}</span>
+        <span class="tag-chip">{{ client.industry_short }}</span>
+      </div>
+    </div>
+
+    {{ content }}
+
+    <!-- Print-only footer -->
+    <div class="print-footer">
+      SEO Audit 360° · {{ client.name }} · {{ client.domain }} · Generated on {{ client.audit_date }} · {{ site.author }}
+    </div>
+
+  </main>
+</div>

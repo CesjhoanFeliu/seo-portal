@@ -1,0 +1,97 @@
+# ─────────────────────────────────────────────────────────────────
+# DATOS DEL CLIENTE: ASM Integrators
+# Este archivo alimenta tanto la home como la auditoría.
+# Edítalo para actualizar datos sin tocar los templates HTML.
+# ─────────────────────────────────────────────────────────────────
+
+name: ASM Integrators
+slug: asm-integrators
+domain: asmintegrators.com
+location: New York City
+industry: Fire alarm systems, commercial security & communications
+industry_short: NYC · Commercial Security
+stack: WordPress + Divi
+description: >
+  Centralized SEO analysis portal for ASM Integrators.
+  Leading fire alarm and commercial security company in New York
+  with 20+ years of experience, FDNY approved and MBE certified.
+  Data based on real Ahrefs crawl.
+
+# ─── Home ─────────────────────────────────────────────────────
+audit_tool: Ahrefs Site Audit
+pages_analyzed: 142
+crawl_date: April 13, 2026
+audit_date: April 18, 2026
+
+stats:
+  - { label: "Crawled URLs",    value: "142" }
+  - { label: "Monthly Visits",  value: "3,349" }
+  - { label: "With Traffic",    value: "39" }
+  - { label: "Non-Indexed",     value: "23" }
+  - { label: "404 Errors",      value: "3" }
+  - { label: "Health Score",    value: "54" }
+
+# ─── Report cards ─────────────────────────────────────────────
+# status_type: live | new | progress
+# link: path to report (leave empty if in progress)
+reports:
+  - title: Site Architecture Brain Map
+    category: Architecture · Interactive Graph
+    icon: graph
+    status: LIVE
+    status_type: live
+    description: Complete site map as an interactive node graph. 142 URLs classified by section, indexability status and organic traffic.
+    date_label: "Data: April 13, 2026"
+    link: ""  # pending implementation
+
+  - title: SEO Audit 360°
+    category: Technical Audit · SEO
+    icon: audit
+    status: NEW
+    status_type: new
+    description: Comprehensive analysis covering technical, on-page, off-page, content, performance, AI/GEO, local and a prioritized action plan.
+    date_label: "Generated: April 18, 2026"
+    link: /auditorias/asm-integrators/seo-audit/
+
+  - title: Keyword Mapping NYC
+    category: Keyword Research · In Progress
+    icon: search
+    status: IN PROGRESS
+    status_type: progress
+    description: Keywords by intent and volume for all 5 boroughs. Fire alarm, security and communications.
+    date_label: "Estimated: May 2026"
+    link: ""
+
+  - title: Competitive Analysis NYC
+    category: Competition · In Progress
+    icon: chart
+    status: IN PROGRESS
+    status_type: progress
+    description: Gap analysis vs direct organic competitors in NYC. Content opportunities by keyword cluster.
+    date_label: "Estimated: May 2026"
+    link: ""
+
+# ─── Sprint actual (to-do list) ───────────────────────────────
+sprint:
+  number: 1
+  title: Audit & Foundations
+  weeks: Weeks 1-2
+  tasks:
+    - { text: "Full Ahrefs crawl completed (Apr 13, 2026)",        done: true  }
+    - { text: "SEO Audit 360° generated (54/100)",                 done: true  }
+    - { text: "Site architecture mapped (142 URLs)",               done: true  }
+    - { text: "Keyword research",                                  done: false }
+    - { text: "Google Search Console + GA4 setup",                 done: false }
+    - { text: "Competitive analysis",                              done: false }
+
+# ─── Scores de la auditoría ───────────────────────────────────
+audit_scores:
+  global:      54
+  technical:   61
+  onpage:      58
+  schema:      60
+  offpage:     48
+  content:     55
+  performance: 50
+  ai_geo:      40
+  local:       55

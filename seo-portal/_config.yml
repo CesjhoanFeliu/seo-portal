@@ -1,0 +1,42 @@
+title: SEO Intelligence Portal
+description: Reportes y auditorías SEO profesionales para clientes
+author: Juan Marcos Pante
+email: tu-email@ejemplo.com
+
+# Cambia esto por tu dominio propio cuando lo tengas configurado
+url: "https://auditorias.tudominio.com"
+baseurl: ""
+
+# URLs limpias: archivo.html -> /archivo/
+permalink: pretty
+
+# Markdown engine
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins permitidos en GitHub Pages
+plugins:
+  - jekyll-seo-tag
+
+# Archivos que NO deben publicarse
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - .github
+
+# Metadatos por defecto
+defaults:
+  - scope:
+      path: "auditorias"
+    values:
+      layout: "audit-report"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

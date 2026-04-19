@@ -1,0 +1,12 @@
+<footer class="site-foot no-print">
+  <div class="site-foot-inner">
+    <div class="site-foot-left">
+      <div class="site-foot-mark">SE</div>
+      <span>{{ site.title }} · {{ 'now' | date: "%Y" }}</span>
+    </div>
+    <div>
+      {% if page.client_name %}{{ page.client_name }} · {% endif %}
+      SEO Project · {{ site.author }}
+    </div>
+  </div>
+</footer>

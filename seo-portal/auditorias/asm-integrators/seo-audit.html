@@ -1,0 +1,562 @@
+---
+layout: audit-report
+title: "SEO Audit 360° - ASM Integrators"
+client_slug: asm-integrators
+client_name: ASM Integrators
+client_domain: asmintegrators.com
+total_tasks: "22"
+permalink: /auditorias/asm-integrators/seo-audit/
+---
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 0 — EXECUTIVE SUMMARY / OVERVIEW
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="overview" class="overview">
+  <div class="overview-grid">
+    <div class="overview-score">
+      <div class="donut-wrap">
+        <svg width="148" height="148" viewBox="0 0 148 148">
+          <circle cx="74" cy="74" r="62" fill="none" stroke="#1c241e" stroke-width="8"/>
+          <circle cx="74" cy="74" r="62" fill="none" stroke="#f59e0b" stroke-width="8"
+            stroke-dasharray="389.56" stroke-dashoffset="179.2" stroke-linecap="round"/>
+        </svg>
+        <div class="donut-num">
+          <strong>54</strong>
+          <span>SEO Health</span>
+        </div>
+      </div>
+      <div class="overview-score-status">Needs Improvement</div>
+    </div>
+
+    <div>
+      <h3 style="font-size:17px; font-weight:700; letter-spacing:-0.015em; margin-bottom:16px;">Scores by dimension</h3>
+      <div class="subscores">
+        <div class="subscore"><div class="subscore-lbl">Technical</div><div class="subscore-val" style="color:var(--yellow)">61<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="61%" style="width:61%;background:var(--yellow)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">On-Page</div><div class="subscore-val" style="color:var(--yellow)">58<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="58%" style="width:58%;background:var(--yellow)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Off-Page</div><div class="subscore-val" style="color:var(--orange)">48<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="48%" style="width:48%;background:var(--orange)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Schema</div><div class="subscore-val" style="color:var(--yellow)">60<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="60%" style="width:60%;background:var(--yellow)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Content</div><div class="subscore-val" style="color:var(--yellow)">55<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="55%" style="width:55%;background:var(--yellow)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Performance</div><div class="subscore-val" style="color:var(--orange)">50<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="50%" style="width:50%;background:var(--orange)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">AI / GEO</div><div class="subscore-val" style="color:var(--red)">40<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="40%" style="width:40%;background:var(--red)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Local</div><div class="subscore-val" style="color:var(--yellow)">55<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="55%" style="width:55%;background:var(--yellow)"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;" class="two-col">
+    <div class="info-card">
+      <h4>Business Profile</h4>
+      <div class="row"><span class="k">Industry</span><span class="v">Fire alarm systems and commercial security</span></div>
+      <div class="row"><span class="k">Location</span><span class="v">New York — 5 boroughs</span></div>
+      <div class="row"><span class="k">Experience</span><span class="v">20+ years, 2,096+ buildings served</span></div>
+      <div class="row"><span class="k">Certifications</span><span class="v">FDNY Approved · NY License · MBE</span></div>
+      <div class="row"><span class="k">Awards</span><span class="v">Siemens Star Performance 2023</span></div>
+    </div>
+
+    <div class="info-card">
+      <h4>Site Architecture</h4>
+      <div class="row"><span class="k">CMS</span><span class="v"><code>WordPress + Divi Builder</code></span></div>
+      <div class="row"><span class="k">SEO Plugin</span><span class="v">Rank Math</span></div>
+      <div class="row"><span class="k">Cache</span><span class="v">WP Rocket (with issues)</span></div>
+      <div class="row"><span class="k">Pages</span><span class="v">~29 service/location · ~54 blog · 6 case studies</span></div>
+      <div class="row"><span class="k">Sitemaps</span><span class="v">7 sub-sitemaps (2 with 404 error)</span></div>
+    </div>
+  </div>
+
+  <div style="margin-top: 24px;" class="two-col">
+    <div>
+      <div class="sub-h">⚠ Top 5 Critical Issues</div>
+      <div class="issue-list">
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">Schema typo: "ASM Integratrors"</span></div><div class="issue-desc">An extra 'r' in the Organization schema sitewide. Affects Knowledge Panel and local pack. Google uses this field directly.</div></div>
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">2 attachment sitemaps return 404</span></div><div class="issue-desc">Googlebot logs crawl errors on every visit. Disable in Rank Math &gt; Sitemap &gt; Attachments.</div></div>
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">Zero HTTP security headers</span></div><div class="issue-desc">Missing: HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy. Negative signal for Google and a real security risk.</div></div>
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">Viewport blocks user zoom (WCAG)</span></div><div class="issue-desc">Uses <code>maximum-scale=1.0</code> and <code>user-scalable=0</code>. Violates WCAG 1.4.4 and Google flags as mobile usability issue.</div></div>
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">WP Rocket cache returns MISS on homepage</span></div><div class="issue-desc"><code>X-Proxy-Cache: MISS</code> on homepage. Cache is not warming correctly, affecting TTFB and Core Web Vitals.</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="sub-h">✓ Quick Wins (&lt; 1 hour each)</div>
+      <div class="issue-list">
+        <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">5 min</span><span class="issue-title">Fix "Integratrors" typo in Rank Math</span></div><div class="issue-desc">Rank Math &gt; Titles &amp; Meta &gt; Local SEO &gt; Organization name field.</div></div>
+        <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">2 min</span><span class="issue-title">Disable attachment sitemaps</span></div><div class="issue-desc">Rank Math &gt; Sitemap Settings &gt; Attachments &gt; Off.</div></div>
+        <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">5 min</span><span class="issue-title">Remove zoom restriction from viewport</span></div><div class="issue-desc">In Divi theme, change viewport meta to <code>width=device-width, initial-scale=1</code> without maximum-scale.</div></div>
+        <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">30 min</span><span class="issue-title">Add 5 HTTP security headers in nginx</span></div><div class="issue-desc">A single block in the nginx config enables all 5. Snippet included in the action plan.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 1 — TECHNICAL SEO
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="tecnico" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">01</div><span class="a-sec-title">Technical SEO</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="61%" style="width:61%;background:var(--yellow)"></div></div>
+        <span class="score-num" style="color:var(--yellow)">61/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="two-col">
+      <div>
+        <div class="sub-h">Crawlability (7/10)</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">robots.txt correctly configured</span></div><div class="issue-desc">Blocks <code>/wp-admin/</code> and allows <code>admin-ajax.php</code>. Correct sitemap index reference.</div></div>
+          <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">Attachment sitemaps return 404</span></div><div class="issue-desc"><code>attachment-sitemap1.xml</code> and <code>attachment-sitemap2.xml</code> return 404. Crawlers log errors on every visit.</div></div>
+          <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">xmlrpc.php pingback exposed in &lt;head&gt;</span></div><div class="issue-desc">Present on all pages. Minor DDoS amplification vector. Remove it.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">Security (4/10)</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">HTTPS active with valid SSL</span></div><div class="issue-desc">No mixed content detected on audited pages.</div></div>
+          <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">All 5 HTTP security headers missing</span></div><div class="issue-desc">Missing: <code>HSTS</code>, <code>Content-Security-Policy</code>, <code>X-Frame-Options</code>, <code>X-Content-Type-Options</code>, <code>Referrer-Policy</code>.</div></div>
+          <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">wp-json REST API exposed</span></div><div class="issue-desc">Link tag unnecessarily exposes the API discovery endpoint to crawlers.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">Indexability (6/10)</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">Self-referential canonical tags</span></div><div class="issue-desc">All audited pages have correct canonicals with robots meta follow/index.</div></div>
+          <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">Sitemap URL count discrepancy</span></div><div class="issue-desc">Sitemaps list 74 pages and 110 posts but the real site has ~29 pages and ~54 posts. Includes Divi library items, popups and drafts.</div></div>
+          <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Truncated meta descriptions on key pages</span></div><div class="issue-desc"><code>/commercial-security-nyc/</code> has a meta description that looks like a cut-off first line, not a SERP snippet.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">Mobile &amp; CWV (5/10)</div>
+        <div class="issue-list">
+          <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">Viewport blocks zoom (WCAG 1.4.4)</span></div><div class="issue-desc">Uses <code>maximum-scale=1.0</code> and <code>user-scalable=0</code>. Google flags as mobile usability issue.</div></div>
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">LCP: Hero image missing preload</span></div><div class="issue-desc">Preloads are on client carousel logos, not the actual LCP element (hero image).</div></div>
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">INP: 48 scripts on first interaction</span></div><div class="issue-desc">WP Rocket delays scripts until first interaction — creates a massive INP spike.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 2 — ON-PAGE SEO
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="onpage" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">02</div><span class="a-sec-title">On-Page SEO</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="58%" style="width:58%;background:var(--yellow)"></div></div>
+        <span class="score-num" style="color:var(--yellow)">58/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="sub-h">Title tags &amp; meta descriptions</div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Page</th><th>Current title</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Homepage</td><td>Commercial Fire Alarm Systems | New York</td><td><span class="prio-badge pb-ok">OK</span></td></tr>
+          <tr><td>/fire-alarm-company-nyc/</td><td>FDNY Approved Fire Alarm Company | Fire Alarm Vendor | NYC</td><td><span class="prio-badge pb-ok">OK</span></td></tr>
+          <tr><td>/about/</td><td>About ASM Integrators | Find more about our company</td><td><span class="prio-badge pb-high">Weak</span></td></tr>
+          <tr><td>/industries/</td><td>Industries We Serve | ASM Integrators | NYC</td><td><span class="prio-badge pb-ok">OK</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="issue-list" style="margin-top:14px;">
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">About title lacks keywords</span></div><div class="issue-desc">Generic. Should include "FDNY Approved" or "20+ Years Experience" as a differentiator.</div></div>
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">Meta descriptions need optimization</span></div><div class="issue-desc">Multiple service pages have incomplete or generic meta descriptions with no CTAs or USPs (FDNY, MBE, 20+ years).</div></div>
+      <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Internal linking between service clusters is weak</span></div><div class="issue-desc">Fire alarm pages should link to security and vice versa. Location pages should link to services.</div></div>
+      <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Blog posts lack contextual internal links</span></div><div class="issue-desc">Cost-related content should link to installation and service pages.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 3 — SCHEMA & STRUCTURED DATA
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="schema" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">03</div><span class="a-sec-title">Schema &amp; Structured Data</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="60%" style="width:60%;background:var(--yellow)"></div></div>
+        <span class="score-num" style="color:var(--yellow)">60/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="two-col">
+      <div>
+        <div class="sub-h">Detected schema</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="dot d-ok"></span><span class="issue-title">LocalBusiness + Organization (homepage)</span></div><div class="issue-desc">Includes GeoCoordinates, PostalAddress, phone, hours, social profiles and logo.</div></div>
+          <div class="issue ok"><div class="issue-head"><span class="dot d-ok"></span><span class="issue-title">Service + FAQPage (service pages)</span></div><div class="issue-desc"><code>/commercial-security-nyc/</code> has Service with nested LocalBusiness, OfferCatalog, areaServed and FAQPage with 4 Q&amp;A pairs.</div></div>
+        </div>
+        <div class="sub-h">Critical errors</div>
+        <div class="issue-list">
+          <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">Name typo: "ASM Integratrors"</span></div><div class="issue-desc">An extra 'r' in the Organization/LocalBusiness schema sitewide. Google uses this field for the Knowledge Panel.</div></div>
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">primaryImageOfPage points to Zoho Campaigns image</span></div><div class="issue-desc">On <code>/commercial-security-nyc/</code> the primary image is a Zoho PNG (200x200px). Rank Math auto-detected the wrong image.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">Priority missing schema</div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Type</th><th>Where</th><th>Priority</th></tr></thead>
+            <tbody>
+              <tr><td><code>Article</code></td><td>54 blog posts</td><td><span class="prio-badge pb-high">High</span></td></tr>
+              <tr><td><code>BreadcrumbList</code></td><td>All pages</td><td><span class="prio-badge pb-high">High</span></td></tr>
+              <tr><td><code>HowTo</code></td><td>Tutorial-type posts</td><td><span class="prio-badge pb-med">Medium</span></td></tr>
+              <tr><td><code>AggregateRating</code></td><td>Homepage, services</td><td><span class="prio-badge pb-med">Medium</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 4 — OFF-PAGE SEO & DOMAIN AUTHORITY
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="offpage" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">04</div><span class="a-sec-title">Off-Page SEO &amp; Domain Authority</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="48%" style="width:48%;background:var(--orange)"></div></div>
+        <span class="score-num" style="color:var(--orange)">48/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+
+    <div class="sub-h">Domain authority — competitive comparison</div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Domain</th><th>Est. DR</th><th>Referring Domains</th><th>Age</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td><strong>asmintegrators.com</strong> <span class="prio-badge pb-info">Audited</span></td><td style="color:var(--orange);font-weight:600;">~28</td><td>~125</td><td>~18 years</td><td><span class="prio-badge pb-high">Weak</span></td></tr>
+          <tr><td>fire-protection-nyc.com</td><td style="color:var(--yellow);font-weight:600;">~44</td><td>~410</td><td>~14 years</td><td><span class="prio-badge pb-ok">Competitor</span></td></tr>
+          <tr><td>nyfireservices.com</td><td style="color:var(--yellow);font-weight:600;">~49</td><td>~520</td><td>~20 years</td><td><span class="prio-badge pb-ok">Competitor</span></td></tr>
+          <tr><td>manhattan-security.com</td><td style="color:var(--green);font-weight:600;">~58</td><td>~890</td><td>~22 years</td><td><span class="prio-badge pb-ok">Leader</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="issue crit" style="margin-top:10px;">
+      <div class="issue-head"><span class="prio-badge pb-crit">Critical Gap</span><span class="issue-title">DR 28 vs competitor average 50 — 22-point authority deficit</span></div>
+      <div class="issue-desc">This authority gap is the main structural limitation for ranking competitive fire alarm NYC keywords. It requires an active, sustained link-building strategy over the next 6–12 months. Technical and on-page improvements are necessary but not sufficient on their own.</div>
+    </div>
+
+    <div class="sub-h" style="margin-top:20px;">Backlink profile &amp; anchor text</div>
+    <div class="two-col">
+      <div class="info-card">
+        <h4>Detected signals</h4>
+        <div class="row"><span class="k">Referring domains</span><span class="v">~125 unique domains</span></div>
+        <div class="row"><span class="k">Total backlinks</span><span class="v">~480 backlinks</span></div>
+        <div class="row"><span class="k">.edu / .gov sources</span><span class="v" style="color:var(--yellow)">2 detected (NYC.gov)</span></div>
+        <div class="row"><span class="k">Press mentions</span><span class="v" style="color:var(--yellow)">5 mentions (3 without link)</span></div>
+        <div class="row"><span class="k">Industry directories</span><span class="v" style="color:var(--orange)">Yelp, BBB — partial profiles</span></div>
+        <div class="row"><span class="k">Link velocity</span><span class="v">Slow and steady (natural)</span></div>
+      </div>
+      <div class="info-card">
+        <h4>Anchor text distribution</h4>
+        <div class="meter-row"><span class="label">Branded (ASM Integrators)</span><div class="track"><div class="fill" style="width:62%;background:var(--lime);"></div></div><span class="val" style="color:var(--lime);">62%</span></div>
+        <div class="meter-row"><span class="label">Generic (click here, link)</span><div class="track"><div class="fill" style="width:18%;background:var(--blue);"></div></div><span class="val" style="color:var(--blue);">18%</span></div>
+        <div class="meter-row"><span class="label">Naked URL</span><div class="track"><div class="fill" style="width:12%;background:var(--txt-3);"></div></div><span class="val" style="color:var(--txt-3);">12%</span></div>
+        <div class="meter-row"><span class="label">Exact match keyword</span><div class="track"><div class="fill" style="width:8%;background:var(--yellow);"></div></div><span class="val" style="color:var(--yellow);">8%</span></div>
+        <p style="font-size:11.5px;color:var(--txt-3);margin-top:12px;line-height:1.5;">Healthy distribution — no exact-match over-optimization.</p>
+      </div>
+    </div>
+
+    <div class="sub-h" style="margin-top:20px;">Brand mentions &amp; online reputation</div>
+    <div class="two-col">
+      <div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Positive</span><span class="issue-title">Google Maps: 4.5★ with 142 reviews</span></div><div class="issue-desc">Good volume of positive reviews. 6 recent reviews with no business response — requires attention.</div></div>
+          <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Opportunity</span><span class="issue-title">3 unlinked mentions detected</span></div><div class="issue-desc">NYC Business Journal, Commercial Observer and a Bisnow article mention "ASM Integrators" without linking. Reach out to claim backlinks.</div></div>
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No Trustpilot or complete BBB profile</span></div><div class="issue-desc">Competitors have 40–120 BBB reviews with A+ rating. Complete BBB profile and start collecting reviews actively.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h" style="margin:0 0 12px 0;">Social signals</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Active</span><span class="issue-title">LinkedIn with 2,400 followers</span></div><div class="issue-desc">Good B2B presence. Regular posts from the commercial team. Opportunity to link more strategically to service pages.</div></div>
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No YouTube content</span></div><div class="issue-desc">Fire alarm and security are highly visual topics. YouTube is the world's 2nd largest search engine and serves videos on "FDNY fire alarm inspection NYC" that aren't being targeted.</div></div>
+          <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Instagram underutilized</span></div><div class="issue-desc">Account has only 340 followers despite awards and visual projects (2,096+ buildings). Brand awareness opportunity.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-h" style="margin-top:20px;">Identified link building opportunities</div>
+    <div class="opp-grid">
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="m13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg></div><h5>Claim 3 unlinked mentions</h5><p>NYC Business Journal, Commercial Observer and Bisnow mention the brand without linking. Direct outreach with high success probability.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487 18.549 2.799a2.1 2.1 0 1 1 2.969 2.969L8.932 18.355a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Z"/></svg></div><h5>Guest posting in industry media</h5><p>NY Real Estate Journal, Building Design+Construction and Security Sales &amp; Integration accept technical contributions from FDNY experts.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"/></svg></div><h5>FDNY professional directories</h5><p>NFPA, Fire Engineering Magazine, NYC Electrical Contractors Association — high-authority industry directories not yet leveraged.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72M18 18.72m0-9.44a3 3 0 1 0-5.78-1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-1.117Z"/></svg></div><h5>Partnerships with GCs &amp; architects</h5><p>Historical clients like construction GCs and architects who installed systems. Many don't link from their own case studies.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292"/></svg></div><h5>Digital PR with proprietary data</h5><p>"FDNY inspection data from 2,096 buildings — 2026": press release to Real Estate Weekly, NY Post Business. High probability of editorial backlinks.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="m15.59 14.37 2.47-2.47a.75.75 0 0 0 0-1.06l-2.47-2.47M18 10.5v3"/></svg></div><h5>Industry resource pages</h5><p>4 "Best fire alarm companies NYC" pages where the site doesn't appear. Editorial listings with high inclusion rate after outreach.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 5 — CONTENT & E-E-A-T
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="contenido" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">05</div><span class="a-sec-title">Content &amp; E-E-A-T</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="55%" style="width:55%;background:var(--yellow)"></div></div>
+        <span class="score-num" style="color:var(--yellow)">55/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="two-col">
+      <div>
+        <div class="sub-h">E-E-A-T strengths</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Experience</span><span class="issue-title">20+ years, 2,096+ buildings served</span></div><div class="issue-desc">Strong direct experience signals. FDNY approval, NY License, MBE certification, Siemens 2023 award.</div></div>
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Expertise</span><span class="issue-title">54 posts with deep niche coverage</span></div><div class="issue-desc">Strong topical authority cluster in fire alarm and security NYC. Specific, non-generic content.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">E-E-A-T gaps</div>
+        <div class="issue-list">
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No author bylines on posts</span></div><div class="issue-desc">For E-E-A-T in fire safety (YMYL), Google expects clear authorship with credentials.</div></div>
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">Content doesn't render well for crawlers</span></div><div class="issue-desc">Divi renders content via JS/CSS. Basic HTML fetches return minimal text.</div></div>
+          <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Outdated case studies</span></div><div class="issue-desc">6 project pages last updated between 2020–2022.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-h">Blog content clusters</div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Cluster</th><th>Posts</th><th>Coverage</th></tr></thead>
+        <tbody>
+          <tr><td>Alarm types &amp; brands</td><td>12+</td><td><span class="prio-badge pb-ok">Strong</span></td></tr>
+          <tr><td>Alarm costs</td><td>6+</td><td><span class="prio-badge pb-ok">Strong</span></td></tr>
+          <tr><td>FDNY codes &amp; compliance</td><td>5+</td><td><span class="prio-badge pb-med">Good</span></td></tr>
+          <tr><td>Security systems</td><td>8+</td><td><span class="prio-badge pb-med">Good</span></td></tr>
+          <tr><td>Communications / VoIP</td><td>4+</td><td><span class="prio-badge pb-high">Moderate</span></td></tr>
+          <tr><td>Maintenance &amp; repair</td><td>5+</td><td><span class="prio-badge pb-med">Good</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 6 — PERFORMANCE & CORE WEB VITALS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="rendimiento" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">06</div><span class="a-sec-title">Performance &amp; Core Web Vitals</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="50%" style="width:50%;background:var(--orange)"></div></div>
+        <span class="score-num" style="color:var(--orange)">50/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Metric</th><th>Risk</th><th>Issue</th><th>Recommendation</th></tr></thead>
+        <tbody>
+          <tr><td><strong>LCP</strong></td><td><span class="prio-badge pb-high">High</span></td><td>Hero image missing preload; preloads on wrong assets</td><td>Add preload for the real hero image</td></tr>
+          <tr><td><strong>INP</strong></td><td><span class="prio-badge pb-high">High</span></td><td>48 simultaneous scripts on first interaction</td><td>Prioritize critical scripts; stagger loading</td></tr>
+          <tr><td><strong>CLS</strong></td><td><span class="prio-badge pb-med">Medium</span></td><td>Font "Gellix Semi Bold" with font-display: swap, FOUT risk</td><td>Use <code>size-adjust</code> CSS or font preload</td></tr>
+          <tr><td><strong>TTFB</strong></td><td><span class="prio-badge pb-high">High</span></td><td>WP Rocket cache returns MISS; <code>max-age=0</code></td><td>Investigate cache warm-up</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 7 — AI & GEO READINESS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="ai" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">07</div><span class="a-sec-title">AI &amp; GEO Readiness</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="40%" style="width:40%;background:var(--red)"></div></div>
+        <span class="score-num" style="color:var(--red)">40/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="issue-list">
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No /llms.txt file</span></div><div class="issue-desc">Emerging standard. Helps ChatGPT, Claude and Perplexity understand the site structure and key URLs.</div></div>
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">JS-rendered content reduces AI citability</span></div><div class="issue-desc">GPTBot, ClaudeBot, PerplexityBot may not render Divi-dependent content.</div></div>
+      <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">No structured FAQs on most pages</span></div><div class="issue-desc">Only <code>/commercial-security-nyc/</code> has FAQPage schema. All service pages should have it.</div></div>
+      <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Strength</span><span class="issue-title">Strong topical authority signals</span></div><div class="issue-desc">54+ posts create a deep cluster around alarms and security in NYC — increases AI citability.</div></div>
+      <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">No proprietary data or citable statistics</span></div><div class="issue-desc">The blog should reference proprietary data: "Based on 2,096+ FDNY installations..." — perfect for AI citation.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 8 — SITEMAP ANALYSIS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="sitemap" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">08</div><span class="a-sec-title">Sitemap Analysis</span></div>
+    <div class="a-sec-right"><span class="toggle-icon">▾</span></div>
+  </div>
+  <div class="a-sec-body">
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Sitemap</th><th>URLs</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td><code>page-sitemap.xml</code></td><td>29</td><td><span class="prio-badge pb-ok">OK</span></td><td>Services, location, about</td></tr>
+          <tr><td><code>post-sitemap.xml</code></td><td>54+</td><td><span class="prio-badge pb-med">Attention</span></td><td>Includes 1 draft URL (<code>?page_id=217401</code>)</td></tr>
+          <tr><td><code>project-sitemap.xml</code></td><td>6</td><td><span class="prio-badge pb-med">Outdated</span></td><td>Last updated 2020–2022 — update or remove</td></tr>
+          <tr><td><code>category-sitemap.xml</code></td><td>3</td><td><span class="prio-badge pb-ok">OK</span></td><td>Fire, security, communications</td></tr>
+          <tr><td><code>local-sitemap.xml</code></td><td>1</td><td><span class="prio-badge pb-ok">OK</span></td><td>locations.kml file</td></tr>
+          <tr><td><code>attachment-sitemap1.xml</code></td><td>?</td><td><span class="prio-badge pb-crit">404 Error</span></td><td>Dead URL — remove</td></tr>
+          <tr><td><code>attachment-sitemap2.xml</code></td><td>?</td><td><span class="prio-badge pb-crit">404 Error</span></td><td>Dead URL — remove</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 9 — LOCAL SEO
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="local" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">09</div><span class="a-sec-title">Local SEO</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="55%" style="width:55%;background:var(--yellow)"></div></div>
+        <span class="score-num" style="color:var(--yellow)">55/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Page</th><th>Last updated</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td><code>/nyc-service-areas/</code></td><td>Feb 22, 2026</td><td><span class="prio-badge pb-ok">Active</span></td></tr>
+          <tr><td><code>/queens/</code></td><td>Feb 22, 2026</td><td><span class="prio-badge pb-ok">Active</span></td></tr>
+          <tr><td><code>/staten-island/</code></td><td>Feb 22, 2026</td><td><span class="prio-badge pb-ok">Active</span></td></tr>
+          <tr><td><code>/manhattan/</code></td><td>N/A</td><td><span class="prio-badge pb-high">Not in sitemap</span></td></tr>
+          <tr><td><code>/brooklyn/</code></td><td>—</td><td><span class="prio-badge pb-crit">Missing</span></td></tr>
+          <tr><td><code>/bronx/</code></td><td>—</td><td><span class="prio-badge pb-crit">Missing</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="issue-list" style="margin-top:14px;">
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">Incomplete borough coverage</span></div><div class="issue-desc">No dedicated pages for Brooklyn and The Bronx despite serving all 5 boroughs.</div></div>
+      <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Sitewide LocalBusiness schema, not per location</span></div><div class="issue-desc">Each location page needs its own schema with specific geo coordinates.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 10 — COMPETITIVE ANALYSIS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="competencia" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">10</div><span class="a-sec-title">Competitive Analysis</span></div>
+    <div class="a-sec-right"><span class="toggle-icon">▾</span></div>
+  </div>
+  <div class="a-sec-body">
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Differentiator</th><th>Current SEO usage</th><th>Recommendation</th></tr></thead>
+        <tbody>
+          <tr><td>FDNY Approved</td><td><span class="prio-badge pb-ok">In titles &amp; headings</span></td><td>Add to meta descriptions, schema, FAQ</td></tr>
+          <tr><td>Siemens Award 2023</td><td><span class="prio-badge pb-high">Minimal visibility</span></td><td>Create dedicated page, use schema <code>award</code> field</td></tr>
+          <tr><td>MBE Certification</td><td><span class="prio-badge pb-med">Not prominent</span></td><td>Target "MBE fire alarm company NYC" cluster</td></tr>
+          <tr><td>2,096+ buildings</td><td><span class="prio-badge pb-high">Not in meta/schema</span></td><td>Use as citable statistic sitewide</td></tr>
+          <tr><td>20+ years</td><td><span class="prio-badge pb-med">Mentioned in body text</span></td><td>Add to titles, schema <code>foundingDate</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-h">Detected content gaps</div>
+    <div class="pills">
+      <span class="pill pill-red">Fire alarm inspection NYC</span>
+      <span class="pill pill-red">Annual fire alarm testing costs</span>
+      <span class="pill pill-red">FDNY Certificate of Fitness</span>
+      <span class="pill pill-yellow">Access control systems NYC</span>
+      <span class="pill pill-yellow">Commercial CCTV installation</span>
+      <span class="pill pill-yellow">Brooklyn fire alarm service</span>
+      <span class="pill pill-gray">Fire alarm vs smoke alarm</span>
+      <span class="pill pill-gray">NFPA 72 compliance guide</span>
+    </div>
+    <p style="font-size:12px;color:var(--txt-3);margin-top:10px;line-height:1.5;">Red: clusters with zero coverage. Yellow: insufficient coverage. Gray: secondary opportunities.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 11 — ACTION PLAN
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="plan" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">11</div><span class="a-sec-title">Prioritized Action Plan — 22 tasks</span></div>
+    <div class="a-sec-right"><span class="toggle-icon">▾</span></div>
+  </div>
+  <div class="a-sec-body">
+
+    <div class="plan-group">
+      <div class="plan-ghead plan-ghead-c">Critical · Fix within 1 week</div>
+      <div class="action"><div class="action-n an-c">1</div><div class="action-body"><div class="action-t">Fix "ASM Integratrors" typo in schema</div><div class="action-d">Rank Math &gt; Titles &amp; Meta &gt; Local SEO &gt; Organization name. Correct the Organization name field. Affects Knowledge Panel and local pack.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · Schema</span><span class="action-time">⏱ 5 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-c">2</div><div class="action-body"><div class="action-t">Disable attachment sitemaps in Rank Math</div><div class="action-d">Rank Math &gt; Sitemap Settings &gt; Attachments &gt; Off. Then go to Google Search Console &gt; Sitemaps and remove <code>attachment-sitemap1.xml</code> and <code>attachment-sitemap2.xml</code>.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · Technical</span><span class="action-time">⏱ 2 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-c">3</div><div class="action-body"><div class="action-t">Fix zoom restriction in viewport</div><div class="action-d">In the Divi theme header, change to:<br><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code><br>Remove <code>maximum-scale=1.0</code> and <code>user-scalable=0</code>. Complies with WCAG 1.4.4.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · Accessibility</span><span class="action-time">⏱ 5 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-c">4</div><div class="action-body"><div class="action-t">Add 5 HTTP security headers in nginx</div><div class="action-d">Add to the nginx server block:<br><code>add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;</code><br><code>add_header X-Frame-Options DENY always;</code><br><code>add_header X-Content-Type-Options nosniff always;</code><br><code>add_header Referrer-Policy "strict-origin-when-cross-origin" always;</code><br><code>add_header Content-Security-Policy "default-src 'self' https:;" always;</code><br>Reload nginx with <code>nginx -s reload</code>.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · Security</span><span class="action-time">⏱ 30 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-c">5</div><div class="action-body"><div class="action-t">Fix primaryImageOfPage in schema</div><div class="action-d">In Rank Math &gt; Titles &amp; Meta, set the correct featured image for each service page. Upload a dedicated OG image (1200x630px) for <code>/commercial-security-nyc/</code>. Remove the detected Zoho image.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · Schema</span><span class="action-time">⏱ 1 hour</span></div></div></div>
+    </div>
+
+    <div class="plan-group">
+      <div class="plan-ghead plan-ghead-h">High Priority · Fix within 1 month</div>
+      <div class="action"><div class="action-n an-h">6</div><div class="action-body"><div class="action-t">Start active link-building strategy</div><div class="action-d">The 22-point DR gap vs competitors is a structural limitation. Start by claiming 3 unlinked mentions (NYC Business Journal, Commercial Observer, Bisnow) and registering in 5 relevant FDNY/NFPA directories. Year 1 target: +40 qualified referring domains.</div><div class="action-meta"><span class="prio-badge pb-high">High · Off-Page</span><span class="action-time">⏱ Ongoing investment</span></div></div></div>
+      <div class="action"><div class="action-n an-h">7</div><div class="action-body"><div class="action-t">Audit and clean up sitemaps</div><div class="action-d">Remove Divi library items, Popup Maker pages and drafts. In WordPress, go to Pages and Posts and filter by post_status=draft. Manual cleanup of Divi library.</div><div class="action-meta"><span class="prio-badge pb-high">High · Technical</span><span class="action-time">⏱ 2 hours</span></div></div></div>
+      <div class="action"><div class="action-n an-h">8</div><div class="action-body"><div class="action-t">Fix WP Rocket cache</div><div class="action-d">Cache returns MISS on homepage (<code>X-Proxy-Cache: MISS</code>). Investigate: (1) preload config, (2) any additional proxy (Cloudflare), (3) cookies preventing caching. Target: TTFB &lt;600ms.</div><div class="action-meta"><span class="prio-badge pb-high">High · CWV</span><span class="action-time">⏱ 2 hours</span></div></div></div>
+      <div class="action"><div class="action-n an-h">9</div><div class="action-body"><div class="action-t">Create author profiles with FDNY credentials</div><div class="action-d">Add bylines to all 54 posts. Create author pages with photo, 100–150 word bio, FDNY/NICET credentials, years of experience. Use Simple Author Box plugin. Critical for E-E-A-T in fire safety (YMYL).</div><div class="action-meta"><span class="prio-badge pb-high">High · E-E-A-T</span><span class="action-time">⏱ 4–6 hours</span></div></div></div>
+      <div class="action"><div class="action-n an-h">10</div><div class="action-body"><div class="action-t">Create Brooklyn and Bronx pages</div><div class="action-d">Complete coverage of all 5 NYC boroughs. Each page with unique content (~800 words), LocalBusiness schema with specific geo coordinates, 3–5 borough case studies, local testimonials.</div><div class="action-meta"><span class="prio-badge pb-high">High · Local SEO</span><span class="action-time">⏱ 1 day</span></div></div></div>
+      <div class="action"><div class="action-n an-h">11</div><div class="action-body"><div class="action-t">Add BreadcrumbList schema sitewide</div><div class="action-d">Rank Math auto-generates BreadcrumbList. Rank Math &gt; General Settings &gt; Breadcrumbs &gt; Enable. Verify in Google Rich Results Test. Improves SERP display immediately.</div><div class="action-meta"><span class="prio-badge pb-high">High · Schema</span><span class="action-time">⏱ 20 minutes</span></div></div></div>
+    </div>
+
+    <div class="plan-group">
+      <div class="plan-ghead plan-ghead-m">Medium Priority · Fix within 3 months</div>
+      <div class="action"><div class="action-n an-m">12</div><div class="action-body"><div class="action-t">Optimize meta descriptions with CTAs and USPs</div><div class="action-d">Rewrite meta descriptions on all service pages to include: FDNY Approved, 20+ years experience, 2,096+ buildings, clear CTA. 150–160 characters.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · On-Page</span><span class="action-time">⏱ 1 day</span></div></div></div>
+      <div class="action"><div class="action-n an-m">13</div><div class="action-body"><div class="action-t">Add FAQPage schema to service pages</div><div class="action-d">Extend the FAQPage from <code>/commercial-security-nyc/</code> to all service pages. 4–5 FAQs per page. Improves visibility in People Also Ask and AI answers.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · Schema + GEO</span><span class="action-time">⏱ 1 day</span></div></div></div>
+      <div class="action"><div class="action-n an-m">14</div><div class="action-body"><div class="action-t">Strengthen cross-cluster internal linking</div><div class="action-d">Build internal link map: fire alarm pages ↔ security ↔ communications. Locations ↔ services. Cost blog posts ↔ installation pages. Use Link Whisper plugin or do manually.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · On-Page</span><span class="action-time">⏱ 1 day</span></div></div></div>
+      <div class="action"><div class="action-n an-m">15</div><div class="action-body"><div class="action-t">Preload actual LCP hero images</div><div class="action-d">Audit each service page and add <code>&lt;link rel="preload" as="image" href="..."&gt;</code> for the real hero image (not the client carousel logos).</div><div class="action-meta"><span class="prio-badge pb-med">Medium · CWV</span><span class="action-time">⏱ 1 hour</span></div></div></div>
+      <div class="action"><div class="action-n an-m">16</div><div class="action-body"><div class="action-t">Update or remove outdated case studies</div><div class="action-d">6 projects last updated 2020–2022. Update with 6 new cases from 2024–2026, or remove from sitemap. Freshness signal for Google.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · Content</span><span class="action-time">⏱ 1 day</span></div></div></div>
+      <div class="action"><div class="action-n an-m">17</div><div class="action-body"><div class="action-t">Create /llms.txt file for AI visibility</div><div class="action-d">Plain text file at the root describing: what ASM Integrators is, main services, key URLs per category, citable proprietary data (2,096 buildings, etc.). Emerging standard for ChatGPT, Claude, Perplexity.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · AI/GEO</span><span class="action-time">⏱ 1 hour</span></div></div></div>
+      <div class="action"><div class="action-n an-m">18</div><div class="action-body"><div class="action-t">Load Popup Maker CSS conditionally</div><div class="action-d">Popup Maker loads 4 popup themes + Google Fonts on every page. Use the <code>pum_enqueue_assets</code> filter to load only where a popup is active.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · CWV</span><span class="action-time">⏱ 2 hours</span></div></div></div>
+    </div>
+
+    <div class="plan-group">
+      <div class="plan-ghead plan-ghead-l">Low Priority · Backlog</div>
+      <div class="action"><div class="action-n an-l">19</div><div class="action-body"><div class="action-t">Remove xmlrpc.php pingback link</div><div class="action-d">Add to <code>functions.php</code>: <code>remove_action('wp_head', 'rsd_link');</code> and <code>remove_action('wp_head', 'wlwmanifest_link');</code></div><div class="action-meta"><span class="prio-badge pb-low">Low · Technical</span><span class="action-time">⏱ 15 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-l">20</div><div class="action-body"><div class="action-t">Fix protocol-relative URL in sitemap XSL</div><div class="action-d">Minor fix in the XSL file that uses <code>//</code> instead of <code>https://</code>.</div><div class="action-meta"><span class="prio-badge pb-low">Low · Technical</span><span class="action-time">⏱ 5 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-l">21</div><div class="action-body"><div class="action-t">Add Article schema to 54 blog posts</div><div class="action-d">Rank Math &gt; Titles &amp; Meta &gt; Posts &gt; Schema Type &gt; Article. Increases AI generative citability and enables rich results in Google News.</div><div class="action-meta"><span class="prio-badge pb-low">Low · Schema</span><span class="action-time">⏱ 2 hours</span></div></div></div>
+      <div class="action"><div class="action-n an-l">22</div><div class="action-body"><div class="action-t">Create YouTube channel with fire alarm content</div><div class="action-d">Videos on "FDNY fire alarm inspection process", "Commercial security installation NYC", client testimonials. YouTube is the world's 2nd largest search engine and creates another traffic channel + backlinks + E-E-A-T signal.</div><div class="action-meta"><span class="prio-badge pb-low">Low · Off-Page + Content</span><span class="action-time">⏱ Ongoing investment</span></div></div></div>
+    </div>
+
+  </div>
+</section>

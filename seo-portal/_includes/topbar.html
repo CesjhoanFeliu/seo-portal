@@ -1,0 +1,27 @@
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="{{ '/' | relative_url }}" class="brand no-print">
+      <div class="brand-mark">SE</div>
+      <div class="brand-info">
+        <h1>SEO Intelligence</h1>
+        <p>Audit Portal</p>
+      </div>
+    </a>
+
+    <nav class="topbar-nav">
+      {% assign path = page.url %}
+      <a href="{{ '/' | relative_url }}" {% if path == '/' %}class="active"{% endif %}>Dashboard</a>
+      {% if page.client_slug %}
+        <a href="{{ '/auditorias/' | append: page.client_slug | append: '/' | relative_url }}"
+           {% if path contains page.client_slug and path contains 'auditorias' %}class="active"{% endif %}>
+          Reports
+        </a>
+      {% endif %}
+      <a href="#" style="opacity: 0.5; pointer-events: none;">Resources</a>
+    </nav>
+
+    <div class="topbar-right">
+      {% if page.client_domain %}{{ page.client_domain }}{% else %}{{ site.url | replace: 'https://', '' }}{% endif %}
+    </div>
+  </div>
+</header>
