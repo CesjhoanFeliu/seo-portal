@@ -12,8 +12,8 @@
       {% assign path = page.url %}
       <a href="{{ '/' | relative_url }}" {% if path == '/' %}class="active"{% endif %}>Dashboard</a>
       {% if page.client_slug %}
-        <a href="{{ '/auditorias/' | append: page.client_slug | append: '/' | relative_url }}"
-           {% if path contains page.client_slug and path contains 'auditorias' %}class="active"{% endif %}>
+        <a href="{{ '/audits/' | append: page.client_slug | append: '/' | relative_url }}"
+           {% if path contains page.client_slug and path contains 'audits' %}class="active"{% endif %}>
           Reports
         </a>
       {% endif %}

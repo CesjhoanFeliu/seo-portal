@@ -1,10 +1,10 @@
 title: SEO Intelligence Portal
 description: Reportes y auditorías SEO profesionales para clientes
 author: Cesjhoan Feliu
-email: tu-email@ejemplo.com
+email: personal@cesjhoanfeliu.com
 
 # Cambia esto por tu dominio propio cuando lo tengas configurado
-url: "https://auditorias.tudominio.com"
+url: "https://auditorias.cesjhoanfeliu.com"
 baseurl: ""
 
 # URLs limpias: archivo.html -> /archivo/
@@ -33,7 +33,7 @@ exclude:
 # Metadatos por defecto
 defaults:
   - scope:
-      path: "auditorias"
+      path: "audits"
     values:
       layout: "audit-report"
   - scope:

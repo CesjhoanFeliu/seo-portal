@@ -27,7 +27,7 @@ title: Dashboard
     <div class="reports-grid">
       {% for c in site.data.clients %}
       {% assign client = c[1] %}
-      <a href="{{ '/auditorias/' | append: client.slug | append: '/' | relative_url }}" class="report-card live">
+      <a href="{{ '/audits/' | append: client.slug | append: '/' | relative_url }}" class="report-card live">
         <span class="badge lime">ACTIVE</span>
 
         <div class="report-card-ico">
