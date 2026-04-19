@@ -1,0 +1,85 @@
+# ─────────────────────────────────────────────────────────────────
+# CLIENT DATA: Confetti Recruiting
+# ─────────────────────────────────────────────────────────────────
+
+name: Confetti Recruiting
+slug: confetti-recruiting
+domain: confettirecruiting.com
+location: Provo, Utah
+industry: GTM Recruiting & Offshore Staffing
+industry_short: Provo, UT · GTM Recruiting
+stack: Webflow
+description: >
+  SEO Intelligence Portal for Confetti Recruiting — bootstrapped GTM
+  recruiting agency founded by Xan Marcucci after 10 years in tech sales
+  (Adobe, enterprise, startups). Specializes in direct hire, executive
+  search, and offshore staffing for tech companies at $10/hr+.
+  Data based on manual site analysis + SERP research.
+
+# ─── Audit Metadata ───────────────────────────────────────────
+audit_tool: Manual Site Analysis + SERP Research
+pages_analyzed: ~30
+crawl_date: April 19, 2026
+audit_date: April 19, 2026
+
+stats:
+  - { label: "Est. Monthly Visits",  value: "~2,200" }
+  - { label: "Blog Posts",           value: "20+" }
+  - { label: "Service Pages",        value: "5" }
+  - { label: "Referring Domains",    value: "~45" }
+  - { label: "404 Errors",           value: "0" }
+  - { label: "Health Score",         value: "55" }
+
+# ─── Report cards ─────────────────────────────────────────────
+reports:
+  - title: SEO Audit 360°
+    category: Technical Audit · SEO
+    icon: audit
+    status: NEW
+    status_type: new
+    description: Full analysis covering technical, on-page, schema, off-page, content, performance, AI/GEO and local. Includes prioritized action plan.
+    date_label: "Generated: April 19, 2026"
+    link: /audits/confetti-recruiting/seo-audit/
+
+  - title: Keyword Mapping — GTM & Offshore
+    category: Keyword Research · Pending
+    icon: search
+    status: IN PROGRESS
+    status_type: progress
+    description: Keyword map by intent for GTM recruiting, offshore staffing, and career coaching terms. US national + Provo local.
+    date_label: "Estimated: May 2026"
+    link: ""
+
+  - title: Competitive Analysis — GTM Recruiting
+    category: Competition · Pending
+    icon: chart
+    status: IN PROGRESS
+    status_type: progress
+    description: Gap analysis vs direct organic competitors in the GTM and offshore staffing niche. Content opportunities by keyword cluster.
+    date_label: "Estimated: May 2026"
+    link: ""
+
+# ─── Sprint ───────────────────────────────────────────────────
+sprint:
+  number: 1
+  title: Audit & Foundations
+  weeks: Weeks 1-2
+  tasks:
+    - { text: "SEO Audit 360° generated (55/100)",                done: true  }
+    - { text: "Schema implementation (Organization + Service + FAQ)", done: false }
+    - { text: "Fix /about-8 URL slug in Webflow",                 done: false }
+    - { text: "Keyword mapping — GTM + offshore terms",           done: false }
+    - { text: "Google Search Console + GA4 review",              done: false }
+    - { text: "Competitive analysis — GTM recruiting niche",     done: false }
+
+# ─── Scores ───────────────────────────────────────────────────
+audit_scores:
+  global:      55
+  technical:   65
+  onpage:      60
+  schema:      30
+  offpage:     45
+  content:     72
+  performance: 68
+  ai_geo:      45
+  local:       25

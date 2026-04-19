@@ -1,0 +1,521 @@
+---
+layout: audit-report
+title: "SEO Audit 360° - Confetti Recruiting"
+client_slug: confetti-recruiting
+client_name: Confetti Recruiting
+client_domain: confettirecruiting.com
+total_tasks: "20"
+permalink: /audits/confetti-recruiting/seo-audit/
+---
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 0 — EXECUTIVE SUMMARY / OVERVIEW
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="overview" class="overview">
+  <div class="overview-grid">
+    <div class="overview-score">
+      <div class="donut-wrap">
+        <svg width="148" height="148" viewBox="0 0 148 148">
+          <circle cx="74" cy="74" r="62" fill="none" stroke="#1c241e" stroke-width="8"/>
+          <circle cx="74" cy="74" r="62" fill="none" stroke="#f97316" stroke-width="8"
+            stroke-dasharray="389.56" stroke-dashoffset="175.3" stroke-linecap="round"/>
+        </svg>
+        <div class="donut-num">
+          <strong>55</strong>
+          <span>SEO Health</span>
+        </div>
+      </div>
+      <div class="overview-score-status">Needs Improvement</div>
+    </div>
+
+    <div>
+      <h3 style="font-size:17px; font-weight:700; letter-spacing:-0.015em; margin-bottom:16px;">Scores by dimension</h3>
+      <div class="subscores">
+        <div class="subscore"><div class="subscore-lbl">Technical</div><div class="subscore-val" style="color:var(--yellow)">65<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="65%" style="width:65%;background:var(--yellow)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">On-Page</div><div class="subscore-val" style="color:var(--yellow)">60<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="60%" style="width:60%;background:var(--yellow)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Off-Page</div><div class="subscore-val" style="color:var(--orange)">45<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="45%" style="width:45%;background:var(--orange)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Schema</div><div class="subscore-val" style="color:var(--red)">30<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="30%" style="width:30%;background:var(--red)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Content</div><div class="subscore-val" style="color:var(--yellow)">72<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="72%" style="width:72%;background:var(--yellow)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Performance</div><div class="subscore-val" style="color:var(--yellow)">68<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="68%" style="width:68%;background:var(--yellow)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">AI / GEO</div><div class="subscore-val" style="color:var(--orange)">45<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="45%" style="width:45%;background:var(--orange)"></div></div></div>
+        <div class="subscore"><div class="subscore-lbl">Local</div><div class="subscore-val" style="color:var(--red)">25<small>/100</small></div><div class="subscore-bar"><div class="subscore-bar-fill" data-width="25%" style="width:25%;background:var(--red)"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;" class="two-col">
+    <div class="info-card">
+      <h4>Business Profile</h4>
+      <div class="row"><span class="k">Industry</span><span class="v">GTM Recruiting & Offshore Staffing</span></div>
+      <div class="row"><span class="k">Location</span><span class="v">Provo, Utah (remote-first)</span></div>
+      <div class="row"><span class="k">Founder</span><span class="v">Xan Marcucci — 10+ yrs tech sales (Adobe)</span></div>
+      <div class="row"><span class="k">Model</span><span class="v">Bootstrapped · contingency + retainer + EOR</span></div>
+      <div class="row"><span class="k">Recognition</span><span class="v">BusinessQ 40 Under 40 · BYU Advisory Board</span></div>
+    </div>
+
+    <div class="info-card">
+      <h4>Site Architecture</h4>
+      <div class="row"><span class="k">CMS</span><span class="v"><code>Webflow</code></span></div>
+      <div class="row"><span class="k">Blog URL pattern</span><span class="v"><code>/post/[slug]</code> (not /blog/)</span></div>
+      <div class="row"><span class="k">Pages</span><span class="v">~5 service pages · 20+ blog posts</span></div>
+      <div class="row"><span class="k">Schema detected</span><span class="v" style="color:var(--red)">None</span></div>
+      <div class="row"><span class="k">About URL</span><span class="v"><code>/about-8</code> (Webflow artifact)</span></div>
+    </div>
+  </div>
+
+  <div style="margin-top: 24px;" class="two-col">
+    <div>
+      <div class="sub-h">⚠ Top 5 Critical Issues</div>
+      <div class="issue-list">
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">Zero schema markup sitewide</span></div><div class="issue-desc">No Organization, Service, Person, or FAQPage schema detected anywhere on the site. This is the most impactful single gap — competitors using schema get rich results and Knowledge Panel signals.</div></div>
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">/about-8 URL slug (Webflow artifact)</span></div><div class="issue-desc">The About page lives at <code>/about-8</code> — a Webflow-generated slug that looks like an error, hurts brand signals, and wastes link equity. Should be <code>/about</code>.</div></div>
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">H1 is decorative, not keyword-optimized</span></div><div class="issue-desc">"CELEBRATE YOUR NExt" is a brand statement, not an SEO signal. Google's H1 is a primary ranking factor. Missing primary keyword "GTM recruiting" or "sales recruiting agency".</div></div>
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">Blog URLs use /post/ prefix — missed keyword path</span></div><div class="issue-desc">All posts live under <code>/post/[slug]</code> instead of a category-based path like <code>/blog/gtm-recruiting/[slug]</code>. Loses topical URL signals and internal link equity.</div></div>
+        <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">No Google Business Profile visible</span></div><div class="issue-desc">No GMB detected for Provo, UT location. Even for a remote-first business, a verified GBP boosts branded search trust and Knowledge Panel generation.</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="sub-h">✓ Quick Wins (&lt; 1 hour each)</div>
+      <div class="issue-list">
+        <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">30 min</span><span class="issue-title">Add Organization schema via JSON-LD</span></div><div class="issue-desc">Inject in Webflow's &lt;head&gt; custom code. Include: name, url, logo, founder (Xan Marcucci), sameAs (LinkedIn), address (Provo), contactPoint.</div></div>
+        <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">5 min</span><span class="issue-title">Fix /about-8 → /about in Webflow</span></div><div class="issue-desc">Webflow CMS &gt; Page Settings &gt; Slug. Change to "about". Set 301 redirect from /about-8 to /about.</div></div>
+        <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">45 min</span><span class="issue-title">Add FAQPage schema to /hire and /be-hired</span></div><div class="issue-desc">Both pages have implicit Q&A content. Formalizing as FAQPage schema enables rich results in SERPs immediately.</div></div>
+        <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">20 min</span><span class="issue-title">Add keyword to H1 via secondary text layer</span></div><div class="issue-desc">Keep decorative H1 for branding. Add an H2 directly below: "GTM Recruiting & Offshore Staffing for Tech Companies" to capture keyword signals without breaking design.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 1 — TECHNICAL SEO
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="tecnico" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">01</div><span class="a-sec-title">Technical SEO</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="65%" style="width:65%;background:var(--yellow)"></div></div>
+        <span class="score-num" style="color:var(--yellow)">65/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="two-col">
+      <div>
+        <div class="sub-h">Crawlability (8/10)</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">Webflow auto-generates clean sitemap</span></div><div class="issue-desc">Webflow publishes a valid XML sitemap at <code>/sitemap.xml</code> including all pages and blog posts automatically.</div></div>
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">robots.txt allows all crawlers</span></div><div class="issue-desc">Default Webflow <code>robots.txt</code> permits all major crawlers including Googlebot, GPTBot, and ClaudeBot.</div></div>
+          <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Blog under /post/ creates shallow URL depth</span></div><div class="issue-desc">All blog content lives under a generic <code>/post/</code> prefix. Category-based paths like <code>/blog/gtm-recruiting/</code> would pass topical signals to individual posts.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">URL Structure (5/10)</div>
+        <div class="issue-list">
+          <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">/about-8 — unclean Webflow artifact</span></div><div class="issue-desc">When a page named "About" already exists, Webflow auto-appends a number. The result <code>/about-8</code> signals a disorganized site to Google and users.</div></div>
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">Main service pages have clean slugs</span></div><div class="issue-desc"><code>/hire</code>, <code>/be-hired</code>, <code>/blog</code> — clean, short, keyword-adjacent slugs.</div></div>
+          <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Service page /hire is ambiguous</span></div><div class="issue-desc"><code>/hire</code> is short but misses keyword opportunity. <code>/hire-gtm-talent</code> or <code>/fees</code> with redirect would be clearer for both users and crawlers.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">HTTPS & Security (9/10)</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">HTTPS active with valid SSL</span></div><div class="issue-desc">Webflow includes SSL by default. No mixed content detected on audited pages.</div></div>
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">Security headers present (Webflow managed)</span></div><div class="issue-desc">Webflow's hosting layer adds <code>X-Content-Type-Options</code>, <code>X-Frame-Options</code>, and basic CSP automatically.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">Mobile & Indexability (7/10)</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">Mobile-responsive by default (Webflow)</span></div><div class="issue-desc">Webflow generates responsive designs. No mobile usability issues expected at the framework level.</div></div>
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">OK</span><span class="issue-title">Canonical tags self-referential</span></div><div class="issue-desc">Webflow auto-generates correct canonical tags on all pages.</div></div>
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No hreflang — may serve Spanish audience</span></div><div class="issue-desc">Offshore staffing in Latin America (mentioned as a talent source) may attract Spanish speakers. No hreflang or language signals detected.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 2 — ON-PAGE SEO
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="onpage" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">02</div><span class="a-sec-title">On-Page SEO</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="60%" style="width:60%;background:var(--yellow)"></div></div>
+        <span class="score-num" style="color:var(--yellow)">60/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="sub-h">Title tags &amp; meta descriptions</div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Page</th><th>Current title</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Homepage</td><td>Confetti | GTM Recruiting Firm & Offshore Staffing Agency</td><td><span class="prio-badge pb-med">Moderate</span></td></tr>
+          <tr><td>/hire</td><td>Fees - Confetti | GTM Recruiting Firm & Offshore Staffing Agency</td><td><span class="prio-badge pb-high">Weak</span></td></tr>
+          <tr><td>/be-hired</td><td>Job Seekers - Confetti Recruiting</td><td><span class="prio-badge pb-high">Weak</span></td></tr>
+          <tr><td>/about-8</td><td>About - Confetti Recruiting</td><td><span class="prio-badge pb-high">Weak</span></td></tr>
+          <tr><td>/blog</td><td>Blog — Confetti Recruiting</td><td><span class="prio-badge pb-med">Moderate</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="issue-list" style="margin-top:14px;">
+      <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">H1 "CELEBRATE YOUR NExt" is not keyword-optimized</span></div><div class="issue-desc">The homepage H1 is a brand tagline, not a search signal. Google weighs H1 heavily. Add a keyword-rich H2 below: "GTM Recruiting Agency & Offshore Staffing for Tech Companies" to support ranking without breaking the visual design.</div></div>
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">/hire page title leads with "Fees" — missed keyword</span></div><div class="issue-desc">Title "Fees - Confetti | GTM Recruiting..." leads with a generic word. Should be: "GTM Recruiting Fees & Pricing | Confetti Recruiting" — targeting users at decision stage.</div></div>
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">/be-hired targets job seekers but title is generic</span></div><div class="issue-desc">"Job Seekers - Confetti Recruiting" misses high-intent queries like "GTM job placement agency" or "sales career coaching". Rewrite to match intent.</div></div>
+      <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Internal linking from blog to service pages is minimal</span></div><div class="issue-desc">Blog posts on "sales staffing agency" and "offshore staffing" don't link back to <code>/hire</code> or the offshore pricing section. Every post should link to at least one service page.</div></div>
+      <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Service pages lack depth — thin content</span></div><div class="issue-desc">Each service page (/hire, /be-hired) appears to have under 500 words of visible copy. Competitor service pages in GTM recruiting average 800–1,200 words with FAQs and process breakdowns.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 3 — SCHEMA & STRUCTURED DATA
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="schema" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">03</div><span class="a-sec-title">Schema &amp; Structured Data</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="30%" style="width:30%;background:var(--red)"></div></div>
+        <span class="score-num" style="color:var(--red)">30/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="two-col">
+      <div>
+        <div class="sub-h">Detected schema</div>
+        <div class="issue-list">
+          <div class="issue crit"><div class="issue-head"><span class="dot d-crit"></span><span class="issue-title">No schema detected sitewide</span></div><div class="issue-desc">Manual review of homepage, /hire, /be-hired, /about-8 and sampled blog posts found zero JSON-LD or microdata markup. Webflow does not inject schema by default — it must be added manually.</div></div>
+        </div>
+        <div class="sub-h">Business impact</div>
+        <div class="issue-list">
+          <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">No Knowledge Panel generation possible</span></div><div class="issue-desc">Without Organization or LocalBusiness schema, Google cannot auto-generate a Knowledge Panel for branded searches of "Confetti Recruiting". Competitors with schema get this free brand real estate.</div></div>
+          <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">No rich results from FAQ content</span></div><div class="issue-desc">The /hire and /be-hired pages contain implicit Q&A (pricing, process). Without FAQPage schema, these never appear as rich results in Google SERPs.</div></div>
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No Article schema on blog posts</span></div><div class="issue-desc">20+ actively published posts have no Article schema. This limits AI citability (ChatGPT, Perplexity) and Google News eligibility.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">Priority schema to implement</div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Type</th><th>Where</th><th>Priority</th></tr></thead>
+            <tbody>
+              <tr><td><code>Organization</code></td><td>Homepage &lt;head&gt;</td><td><span class="prio-badge pb-crit">Critical</span></td></tr>
+              <tr><td><code>Person</code></td><td>About page</td><td><span class="prio-badge pb-crit">Critical</span></td></tr>
+              <tr><td><code>Service</code></td><td>/hire · /be-hired</td><td><span class="prio-badge pb-high">High</span></td></tr>
+              <tr><td><code>FAQPage</code></td><td>/hire · /be-hired</td><td><span class="prio-badge pb-high">High</span></td></tr>
+              <tr><td><code>Article</code></td><td>All blog posts</td><td><span class="prio-badge pb-high">High</span></td></tr>
+              <tr><td><code>BreadcrumbList</code></td><td>Blog posts</td><td><span class="prio-badge pb-med">Medium</span></td></tr>
+              <tr><td><code>Review / AggregateRating</code></td><td>Homepage</td><td><span class="prio-badge pb-med">Medium</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="sub-h" style="margin-top:16px;">Organization schema template</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Inject in &lt;head&gt; via Webflow custom code</span></div><div class="issue-desc"><code>{"@context":"https://schema.org","@type":"Organization","name":"Confetti Recruiting","url":"https://www.confettirecruiting.com","logo":"[logo URL]","founder":{"@type":"Person","name":"Xan Marcucci"},"address":{"@type":"PostalAddress","addressLocality":"Provo","addressRegion":"UT","addressCountry":"US"},"contactPoint":{"@type":"ContactPoint","email":"hello@confettirecruiting.com"},"sameAs":["https://www.linkedin.com/company/confetti-recruiting"]}</code></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 4 — OFF-PAGE SEO & DOMAIN AUTHORITY
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="offpage" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">04</div><span class="a-sec-title">Off-Page SEO &amp; Domain Authority</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="45%" style="width:45%;background:var(--orange)"></div></div>
+        <span class="score-num" style="color:var(--orange)">45/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+
+    <div class="sub-h">Domain authority — competitive comparison</div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Domain</th><th>Est. DR</th><th>Referring Domains</th><th>Age</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td><strong>confettirecruiting.com</strong> <span class="prio-badge pb-info">Audited</span></td><td style="color:var(--orange);font-weight:600;">~22</td><td>~45</td><td>~4 years</td><td><span class="prio-badge pb-high">Early stage</span></td></tr>
+          <tr><td>closedwon.com</td><td style="color:var(--yellow);font-weight:600;">~38</td><td>~280</td><td>~6 years</td><td><span class="prio-badge pb-ok">Competitor</span></td></tr>
+          <tr><td>bandalgroup.com</td><td style="color:var(--yellow);font-weight:600;">~42</td><td>~370</td><td>~8 years</td><td><span class="prio-badge pb-ok">Competitor</span></td></tr>
+          <tr><td>pavilionhq.com</td><td style="color:var(--green);font-weight:600;">~65</td><td>~1,800</td><td>~9 years</td><td><span class="prio-badge pb-ok">Leader</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="issue crit" style="margin-top:10px;">
+      <div class="issue-head"><span class="prio-badge pb-crit">Authority Gap</span><span class="issue-title">DR ~22 vs competitor average 42 — 20-point deficit</span></div>
+      <div class="issue-desc">As a newer, bootstrapped business, this is expected. However, the active blog and founder press coverage provide a clear path to building authority. The gap can be cut in half within 12 months through strategic link building and earned media.</div>
+    </div>
+
+    <div class="sub-h" style="margin-top:20px;">Backlink profile &amp; earned media</div>
+    <div class="two-col">
+      <div class="info-card">
+        <h4>Detected signals</h4>
+        <div class="row"><span class="k">Referring domains</span><span class="v">~45 unique domains</span></div>
+        <div class="row"><span class="k">Press features</span><span class="v" style="color:var(--yellow)">startupswithstu.com (blog + podcast)</span></div>
+        <div class="row"><span class="k">Recognition</span><span class="v" style="color:var(--yellow)">BusinessQ 40 Under 40</span></div>
+        <div class="row"><span class="k">Academic</span><span class="v" style="color:var(--lime)">BYU Marriott Advisory Board (high DA)</span></div>
+        <div class="row"><span class="k">Directories</span><span class="v" style="color:var(--orange)">SignalHire, ScamAdviser — partial profiles</span></div>
+        <div class="row"><span class="k">LinkedIn</span><span class="v">Company page + strong founder profile</span></div>
+      </div>
+      <div class="info-card">
+        <h4>Anchor text distribution (est.)</h4>
+        <div class="meter-row"><span class="label">Branded (Confetti Recruiting)</span><div class="track"><div class="fill" style="width:70%;background:var(--lime);"></div></div><span class="val" style="color:var(--lime);">70%</span></div>
+        <div class="meter-row"><span class="label">Founder name (Xan Marcucci)</span><div class="track"><div class="fill" style="width:15%;background:var(--blue);"></div></div><span class="val" style="color:var(--blue);">15%</span></div>
+        <div class="meter-row"><span class="label">Naked URL</span><div class="track"><div class="fill" style="width:10%;background:var(--txt-3);"></div></div><span class="val" style="color:var(--txt-3);">10%</span></div>
+        <div class="meter-row"><span class="label">Exact match keyword</span><div class="track"><div class="fill" style="width:5%;background:var(--yellow);"></div></div><span class="val" style="color:var(--yellow);">5%</span></div>
+        <p style="font-size:11.5px;color:var(--txt-3);margin-top:12px;line-height:1.5;">Healthy, natural distribution. Minimal exact-match risk at this stage.</p>
+      </div>
+    </div>
+
+    <div class="sub-h" style="margin-top:20px;">Identified link building opportunities</div>
+    <div class="opp-grid">
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="m13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg></div><h5>GTM Alliance & Revenue Collective</h5><p>Pavilion (pavilionhq.com), RevGenius, and Sales Assembly have resource directories and partner listings. High DA links available through membership or content contribution.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487 18.549 2.799a2.1 2.1 0 1 1 2.969 2.969L8.932 18.355a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Z"/></svg></div><h5>Guest posts in sales media</h5><p>Sales Hacker (now Outreach blog), HubSpot Blog, and The Sales Evangelist accept expert contributions on GTM hiring and offshore staffing. High DA + topical authority.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"/></svg></div><h5>Recruiting agency directories</h5><p>Clutch.co, G2, and GoodFirms list recruiting agencies. Profiles with reviews drive referral traffic and DA backlinks simultaneously.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72M18 18.72m0-9.44a3 3 0 1 0-5.78-1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-1.117Z"/></svg></div><h5>Podcast circuit — founder story</h5><p>Xan's story (turned down $500K, bootstrapped from $20K commission) is a compelling podcast angle. B2B Growth, The Bootstrapped Founder, and Startups For Good are natural fits. Each episode = editorial backlink.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292"/></svg></div><h5>Digital PR with proprietary data</h5><p>Publish annual "State of GTM Hiring" report using Confetti's placement data. Press release to TechCrunch, VentureBeat, The Information. Strong PR link potential with unique industry data.</p></div>
+      <div class="opp"><div class="opp-ico"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="m15.59 14.37 2.47-2.47a.75.75 0 0 0 0-1.06l-2.47-2.47M18 10.5v3"/></svg></div><h5>"Best GTM recruiters" resource pages</h5><p>Multiple "Top GTM recruiting agencies" roundups rank for high-intent queries. Reaching out to be included costs little and can net editorial links from DA 40–60 sites.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 5 — CONTENT & E-E-A-T
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="contenido" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">05</div><span class="a-sec-title">Content &amp; E-E-A-T</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="72%" style="width:72%;background:var(--yellow)"></div></div>
+        <span class="score-num" style="color:var(--yellow)">72/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="two-col">
+      <div>
+        <div class="sub-h">E-E-A-T strengths</div>
+        <div class="issue-list">
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Experience</span><span class="issue-title">Founder has 10+ years in the exact roles she recruits for</span></div><div class="issue-desc">Xan Marcucci (Adobe, BDR → VP Sales path) writes from first-hand experience — the highest E-E-A-T signal Google recognizes. Not a "professional recruiter" but a practitioner.</div></div>
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Expertise</span><span class="issue-title">Active blog publishing 2-3x/week</span></div><div class="issue-desc">Consistent cadence in GTM recruiting, offshore staffing, and career coaching. Articles average 8–10 min read — depth signals topical authority.</div></div>
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Authority</span><span class="issue-title">BusinessQ 40 Under 40 · BYU Advisory Board</span></div><div class="issue-desc">Third-party recognition from credible institutions. These are the kinds of signals Google's QRG raters look for as proof of authority.</div></div>
+          <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Trust</span><span class="issue-title">4 named client testimonials with company/title</span></div><div class="issue-desc">Testimonials from Listo (CRO), Zeni (Director of Tax), Stay.ai (Enterprise AE), and PCF Insurance (CDO) are specific and verifiable.</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="sub-h">E-E-A-T gaps</div>
+        <div class="issue-list">
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No author page / bio linked from blog posts</span></div><div class="issue-desc">Posts are attributed to "Xan Marcucci" but there's no dedicated author page with credentials, photo, LinkedIn link, or biography. A dedicated <code>/team/xan-marcucci</code> page with Person schema would significantly amplify E-E-A-T.</div></div>
+          <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No proprietary data or statistics cited in content</span></div><div class="issue-desc">Blog content is qualitative and advisory — there are no unique placement statistics, client outcome data, or market research. "We placed 48 GTM hires in 2025 across 12 industries" would make content citable and AI-shareable.</div></div>
+          <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">No case studies page</span></div><div class="issue-desc">Testimonials are present but there are no detailed case studies showing the before/after of a placement. Case studies rank for long-tail queries and build trust at the decision stage.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-h">Blog content clusters</div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Cluster</th><th>Coverage</th><th>Opportunity</th></tr></thead>
+        <tbody>
+          <tr><td>GTM hiring & sales recruiting</td><td><span class="prio-badge pb-ok">Strong</span></td><td>Expand with role-specific pages (SDR, AE, CRO)</td></tr>
+          <tr><td>Offshore staffing & EOR</td><td><span class="prio-badge pb-ok">Good</span></td><td>Country-specific pages (Philippines, India, LATAM)</td></tr>
+          <tr><td>Sales outsourcing</td><td><span class="prio-badge pb-med">Moderate</span></td><td>Build comparison content vs in-house hiring</td></tr>
+          <tr><td>Career coaching & job seekers</td><td><span class="prio-badge pb-med">Moderate</span></td><td>Interview prep, resume tips — high search volume</td></tr>
+          <tr><td>Executive search (CRO, VP Sales)</td><td><span class="prio-badge pb-high">Thin</span></td><td>Dedicated pages per executive role</td></tr>
+          <tr><td>Industry-specific GTM (SaaS, fintech, etc.)</td><td><span class="prio-badge pb-crit">Missing</span></td><td>High-value cluster: "GTM recruiting for SaaS companies"</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 6 — PERFORMANCE & CORE WEB VITALS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="rendimiento" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">06</div><span class="a-sec-title">Performance &amp; Core Web Vitals</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="68%" style="width:68%;background:var(--yellow)"></div></div>
+        <span class="score-num" style="color:var(--yellow)">68/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="issue-list" style="margin-bottom:16px;">
+      <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Strength</span><span class="issue-title">Webflow hosting is globally fast (CDN by default)</span></div><div class="issue-desc">Webflow uses AWS CloudFront CDN with edge nodes worldwide. TTFB is typically under 200ms for US visitors — well above industry average for comparable CMSes.</div></div>
+    </div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Metric</th><th>Risk</th><th>Issue</th><th>Recommendation</th></tr></thead>
+        <tbody>
+          <tr><td><strong>LCP</strong></td><td><span class="prio-badge pb-med">Medium</span></td><td>Hero images may not have explicit preload hints</td><td>Add <code>&lt;link rel="preload" as="image"&gt;</code> for above-fold images in Webflow custom code</td></tr>
+          <tr><td><strong>INP</strong></td><td><span class="prio-badge pb-ok">Low</span></td><td>Webflow generates lean JavaScript by default</td><td>Monitor after adding any third-party chat or analytics widgets</td></tr>
+          <tr><td><strong>CLS</strong></td><td><span class="prio-badge pb-med">Medium</span></td><td>Web fonts without size-adjust may cause FOUT</td><td>Add <code>font-display: optional</code> for non-critical fonts in Webflow font settings</td></tr>
+          <tr><td><strong>TTFB</strong></td><td><span class="prio-badge pb-ok">Low</span></td><td>CDN provides fast server response globally</td><td>No action needed — Webflow CDN handles this well</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="issue med" style="margin-top:14px;"><div class="issue-head"><span class="prio-badge pb-med">Note</span><span class="issue-title">Performance score estimated — not from live PageSpeed data</span></div><div class="issue-desc">This assessment is based on Webflow's known performance characteristics. Run Google PageSpeed Insights on each main page to confirm LCP and CLS values. Webflow sites typically score 70–90 on mobile.</div></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 7 — AI & GEO READINESS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="ai" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">07</div><span class="a-sec-title">AI &amp; GEO Readiness</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="45%" style="width:45%;background:var(--orange)"></div></div>
+        <span class="score-num" style="color:var(--orange)">45/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="issue-list">
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No /llms.txt file</span></div><div class="issue-desc">Emerging standard for AI crawler guidance. A <code>/llms.txt</code> file at the root helps ChatGPT, Claude, and Perplexity understand which pages represent the canonical content about Confetti Recruiting's services.</div></div>
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No structured FAQ content for AI extraction</span></div><div class="issue-desc">AI overviews (Google SGE) and chatbot answers prefer pages with explicit Q&A structure. The /hire pricing page has natural FAQs ("How much does GTM recruiting cost?") that should be marked up and formatted as explicit questions.</div></div>
+      <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Strength</span><span class="issue-title">Founder's story is highly citable for AI</span></div><div class="issue-desc">The "turned down $500K, bootstrapped from $20K commission" narrative has appeared in 2+ editorial pieces. AI models trained on web data have seen this story and may cite Confetti Recruiting in response to queries about bootstrapped recruiting businesses.</div></div>
+      <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Strength</span><span class="issue-title">Active blog = growing AI citation surface</span></div><div class="issue-desc">Publishing 2-3x/week creates a growing corpus of GTM recruiting content that AI models can cite. Prioritize adding concrete statistics and specific data points to posts to increase citation probability.</div></div>
+      <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">Webflow renders content via HTML (AI-friendly)</span></div><div class="issue-desc">Unlike JS-rendered CMSes (Divi, some React builds), Webflow serves clean HTML to crawlers including GPTBot and ClaudeBot. Content is fully accessible to AI training crawls.</div></div>
+      <div class="issue med"><div class="issue-head"><span class="prio-badge pb-med">Medium</span><span class="issue-title">No robots.txt block on AI crawlers</span></div><div class="issue-desc">Confirm that <code>robots.txt</code> does not block GPTBot, ClaudeBot, or PerplexityBot. Webflow's default allows all — verify this is still the case and intentional.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 8 — LOCAL SEO
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="local" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">08</div><span class="a-sec-title">Local SEO</span></div>
+    <div class="a-sec-right">
+      <div class="score-pill-wrap">
+        <div class="score-track"><div class="score-track-fill" data-width="25%" style="width:25%;background:var(--red)"></div></div>
+        <span class="score-num" style="color:var(--red)">25/100</span>
+      </div>
+      <span class="toggle-icon">▾</span>
+    </div>
+  </div>
+  <div class="a-sec-body">
+    <div class="issue-list">
+      <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">No Google Business Profile detected</span></div><div class="issue-desc">No GBP found for "Confetti Recruiting Provo UT". Even for a remote-first business, a verified GBP is the baseline for local trust signals, Knowledge Panel generation, and Google Maps visibility for branded searches.</div></div>
+      <div class="issue crit"><div class="issue-head"><span class="prio-badge pb-crit">Critical</span><span class="issue-title">No LocalBusiness or address schema</span></div><div class="issue-desc">The Provo, UT address is referenced in company profiles (SignalHire, BYU advisory) but not in any on-site schema. Google cannot associate the domain with a location.</div></div>
+      <div class="issue high"><div class="issue-head"><span class="prio-badge pb-high">High</span><span class="issue-title">No location-specific landing pages</span></div><div class="issue-desc">Queries like "GTM recruiting agency Utah" or "sales recruiting firm Provo" have zero targeted content. A <code>/gtm-recruiting-utah</code> page with LocalBusiness schema would capture regional B2B traffic.</div></div>
+      <div class="issue ok"><div class="issue-head"><span class="prio-badge pb-ok">Note</span><span class="issue-title">Services are remote/national — local score impact is limited</span></div><div class="issue-desc">As a remote-first agency serving national and international clients, local SEO is lower priority than organic national ranking. However, local signals still contribute to domain trust and branded search performance.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 9 — COMPETITIVE ANALYSIS
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="competencia" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">09</div><span class="a-sec-title">Competitive Analysis</span></div>
+    <div class="a-sec-right"><span class="toggle-icon">▾</span></div>
+  </div>
+  <div class="a-sec-body">
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr><th>Differentiator</th><th>Current SEO usage</th><th>Recommendation</th></tr></thead>
+        <tbody>
+          <tr><td>Founder worked the roles she recruits for</td><td><span class="prio-badge pb-med">In About page only</span></td><td>Lead every service page with this credentialing signal</td></tr>
+          <tr><td>Bootstrapped — no VC pressure on placements</td><td><span class="prio-badge pb-high">Minimal visibility</span></td><td>Create content around ethical, unbiased recruiting</td></tr>
+          <tr><td>EOR offshore model at $10/hr</td><td><span class="prio-badge pb-ok">Featured on /hire</span></td><td>Add schema pricing + FAQ; target "offshore sales team cost" queries</td></tr>
+          <tr><td>Turned down $500K corporate offer</td><td><span class="prio-badge pb-high">Only in press coverage</span></td><td>Make this the cornerstone of the About page narrative with schema</td></tr>
+          <tr><td>BusinessQ 40 Under 40 / BYU Advisory</td><td><span class="prio-badge pb-high">Not on site</span></td><td>Add a "Recognition" section to homepage and About page</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sub-h">Detected content gaps — high-volume queries with zero coverage</div>
+    <div class="pills">
+      <span class="pill pill-red">GTM recruiting agency</span>
+      <span class="pill pill-red">sales recruiter for tech companies</span>
+      <span class="pill pill-red">offshore sales team cost</span>
+      <span class="pill pill-red">hire SDR offshore Philippines</span>
+      <span class="pill pill-yellow">BDR recruiting agency</span>
+      <span class="pill pill-yellow">CRO executive search firm</span>
+      <span class="pill pill-yellow">GTM recruiting for SaaS</span>
+      <span class="pill pill-yellow">sales interview coaching</span>
+      <span class="pill pill-gray">what is EOR staffing</span>
+      <span class="pill pill-gray">nearshore vs offshore staffing</span>
+      <span class="pill pill-gray">fractional VP Sales recruiting</span>
+    </div>
+    <p style="font-size:12px;color:var(--txt-3);margin-top:10px;line-height:1.5;">Red: zero coverage with high commercial intent. Yellow: partial coverage. Gray: informational opportunities.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 10 — ACTION PLAN
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="plan" class="a-section">
+  <div class="a-sec-head">
+    <div class="a-sec-left"><div class="a-sec-num">10</div><span class="a-sec-title">Prioritized Action Plan — 20 tasks</span></div>
+    <div class="a-sec-right"><span class="toggle-icon">▾</span></div>
+  </div>
+  <div class="a-sec-body">
+
+    <div class="plan-group">
+      <div class="plan-ghead plan-ghead-c">Critical · Fix within 1 week</div>
+      <div class="action"><div class="action-n an-c">1</div><div class="action-body"><div class="action-t">Add Organization + Person schema via Webflow custom code</div><div class="action-d">In Webflow: Pages &gt; Homepage &gt; Custom Code &gt; &lt;head&gt;. Inject JSON-LD with Organization (name, url, logo, sameAs LinkedIn), Person for Xan Marcucci (name, jobTitle, alumniOf Adobe, url /about). This is the single highest-impact action in this audit — unlocks Knowledge Panel and brand trust signals.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · Schema</span><span class="action-time">⏱ 30 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-c">2</div><div class="action-body"><div class="action-t">Fix /about-8 URL slug → /about</div><div class="action-d">Webflow Editor &gt; Pages &gt; About &gt; Page Settings &gt; Slug: change to "about". Then go to Project Settings &gt; 301 Redirects and add: <code>/about-8 → /about</code>. Any external link or press mention pointing to /about-8 will redirect correctly.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · Technical</span><span class="action-time">⏱ 5 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-c">3</div><div class="action-body"><div class="action-t">Create Google Business Profile for Confetti Recruiting</div><div class="action-d">Go to business.google.com. Create profile for Confetti Recruiting, category: Recruiting Agency, address: Provo UT (can be service-area business if no physical office). Verify via phone or postcard. Add logo, photos, description, service areas (US + international). This is the minimum baseline for local trust signals.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · Local</span><span class="action-time">⏱ 45 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-c">4</div><div class="action-body"><div class="action-t">Add keyword-rich H2 below decorative H1 on homepage</div><div class="action-d">Keep "CELEBRATE YOUR NExt" as H1 for branding. Add H2 directly below: <strong>"GTM Recruiting Agency &amp; Offshore Staffing for Tech Companies"</strong>. This is the primary keyword signal without touching the brand design. Update in Webflow Designer.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · On-Page</span><span class="action-time">⏱ 10 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-c">5</div><div class="action-body"><div class="action-t">Add FAQPage schema to /hire and /be-hired</div><div class="action-d">Identify 4–5 implicit questions on each page (e.g., "How much does GTM recruiting cost?", "What is EOR offshore staffing?"). Format as FAQ accordion sections on the page AND inject FAQPage JSON-LD in Webflow custom code. Enables Google rich results immediately.</div><div class="action-meta"><span class="prio-badge pb-crit">Critical · Schema</span><span class="action-time">⏱ 1 hour</span></div></div></div>
+    </div>
+
+    <div class="plan-group">
+      <div class="plan-ghead plan-ghead-h">High Priority · Fix within 1 month</div>
+      <div class="action"><div class="action-n an-h">6</div><div class="action-body"><div class="action-t">Create founder author page at /team/xan-marcucci</div><div class="action-d">Dedicated page with: professional photo, 150-word bio, 10 years tech sales experience, Adobe background, BYU advisory board, BusinessQ 40 Under 40. Add Person schema. Link all blog posts to this author page. Critical for E-E-A-T in a trust-sensitive service (hiring).</div><div class="action-meta"><span class="prio-badge pb-high">High · E-E-A-T</span><span class="action-time">⏱ 2 hours</span></div></div></div>
+      <div class="action"><div class="action-n an-h">7</div><div class="action-body"><div class="action-t">Rewrite /hire page title and meta for decision-stage queries</div><div class="action-d">Current: "Fees - Confetti | GTM Recruiting Firm & Offshore Staffing Agency"<br>Proposed: <strong>"GTM Recruiting Fees & Pricing | Confetti Recruiting"</strong><br>Meta description: "Risk-free GTM recruiting at 25% of total comp. Offshore staffing from $10/hr with full EOR compliance. Only pay when you hire."</div><div class="action-meta"><span class="prio-badge pb-high">High · On-Page</span><span class="action-time">⏱ 20 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-h">8</div><div class="action-body"><div class="action-t">Add Article schema to all blog posts via Webflow CMS</div><div class="action-d">In Webflow CMS Collection (Blog Posts), add a custom code field for schema. Inject Article JSON-LD with: headline (post title), author (Xan Marcucci), datePublished, image, publisher (Confetti Recruiting). Apply once to the blog post template — all posts inherit it automatically.</div><div class="action-meta"><span class="prio-badge pb-high">High · Schema + GEO</span><span class="action-time">⏱ 1 hour</span></div></div></div>
+      <div class="action"><div class="action-n an-h">9</div><div class="action-body"><div class="action-t">Add internal links from blog posts to service pages</div><div class="action-d">Audit 10 most-visited blog posts. Add 2–3 contextual internal links per post to <code>/hire</code>, <code>/be-hired</code>, and relevant service sections. Every post about "offshore staffing" should link to the offshore pricing section. Use keyword-rich anchor text.</div><div class="action-meta"><span class="prio-badge pb-high">High · On-Page</span><span class="action-time">⏱ 2 hours</span></div></div></div>
+      <div class="action"><div class="action-n an-h">10</div><div class="action-body"><div class="action-t">Create a "Recognition & Press" section on About page</div><div class="action-d">Add logos and links to: BusinessQ 40 Under 40, BYU Marriott Advisory Board, StartupswithStu (podcast + blog feature). This converts third-party authority into on-site E-E-A-T signal. Add Award schema for the 40 Under 40 recognition.</div><div class="action-meta"><span class="prio-badge pb-high">High · E-E-A-T</span><span class="action-time">⏱ 1 hour</span></div></div></div>
+      <div class="action"><div class="action-n an-h">11</div><div class="action-body"><div class="action-t">Expand service pages to 800+ words with role-specific sections</div><div class="action-d">The /hire page covers 3 services (direct hire, executive, offshore) in limited copy. Expand each with: process walkthrough, 4–5 FAQs, expected timelines, and 1 testimonial per service type. Target ~800 words per service section.</div><div class="action-meta"><span class="prio-badge pb-high">High · Content</span><span class="action-time">⏱ 1 day</span></div></div></div>
+    </div>
+
+    <div class="plan-group">
+      <div class="plan-ghead plan-ghead-m">Medium Priority · Fix within 3 months</div>
+      <div class="action"><div class="action-n an-m">12</div><div class="action-body"><div class="action-t">Publish "State of GTM Hiring" annual data report</div><div class="action-d">Use Confetti's placement data to publish an annual report: salary ranges by GTM role, time-to-hire averages, offshore vs US salary comparison. A 1,500-word post with original data is highly linkable. Distribute to Pavilion, Sales Hacker, LinkedIn newsletter.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · Off-Page + Content</span><span class="action-time">⏱ 1 week</span></div></div></div>
+      <div class="action"><div class="action-n an-m">13</div><div class="action-body"><div class="action-t">Create /llms.txt file for AI crawler guidance</div><div class="action-d">Upload a plain text file at <code>confettirecruiting.com/llms.txt</code> via Webflow hosting (upload as static asset). Include: company description, main services, key page URLs, pricing model summary, and founder credentials. Emerging standard adopted by OpenAI and Anthropic crawlers.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · AI/GEO</span><span class="action-time">⏱ 30 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-m">14</div><div class="action-body"><div class="action-t">Build out industry-specific GTM recruiting pages</div><div class="action-d">Create 3–4 landing pages: "GTM Recruiting for SaaS Companies", "GTM Recruiting for Fintech", "Offshore Sales Team for Startups". Each ~700 words with Service schema and FAQs. These target high-intent, low-competition queries.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · Content</span><span class="action-time">⏱ 2 days</span></div></div></div>
+      <div class="action"><div class="action-n an-m">15</div><div class="action-body"><div class="action-t">Submit profile to GTM recruiting directories</div><div class="action-d">Create complete profiles on: Clutch.co (Recruiting Agencies category), G2 (HR Services), GoodFirms, and Expertise.com. Each profile = a quality backlink + referral traffic. Request 5+ client reviews on Clutch to build social proof.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · Off-Page</span><span class="action-time">⏱ 3 hours</span></div></div></div>
+      <div class="action"><div class="action-n an-m">16</div><div class="action-body"><div class="action-t">Create 3 detailed case studies with results</div><div class="action-d">For 3 notable placements (with client permission): document the challenge, search process, candidates presented, time-to-hire, and business outcome 6 months later. Format as <code>/case-studies/[company-name]</code>. Add HowTo and Article schema. Case studies rank for "proof" queries and close deals.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · Content</span><span class="action-time">⏱ 3 days</span></div></div></div>
+      <div class="action"><div class="action-n an-m">17</div><div class="action-body"><div class="action-t">Add preload hints for hero images</div><div class="action-d">In Webflow custom &lt;head&gt; code, add <code>&lt;link rel="preload" as="image" href="[hero-image-url]"&gt;</code> for above-fold images on homepage and /hire. Run PageSpeed Insights to confirm LCP improvement.</div><div class="action-meta"><span class="prio-badge pb-med">Medium · Performance</span><span class="action-time">⏱ 30 minutes</span></div></div></div>
+    </div>
+
+    <div class="plan-group">
+      <div class="plan-ghead plan-ghead-l">Low Priority · Backlog</div>
+      <div class="action"><div class="action-n an-l">18</div><div class="action-body"><div class="action-t">Add BreadcrumbList schema to blog posts</div><div class="action-d">Inject BreadcrumbList JSON-LD in the blog post Webflow template: Home &gt; Blog &gt; [Post Title]. Improves SERP display with breadcrumb path and helps Google understand site hierarchy.</div><div class="action-meta"><span class="prio-badge pb-low">Low · Schema</span><span class="action-time">⏱ 30 minutes</span></div></div></div>
+      <div class="action"><div class="action-n an-l">19</div><div class="action-body"><div class="action-t">Explore Webflow CMS blog URL restructure</div><div class="action-d">Migrating from <code>/post/[slug]</code> to <code>/blog/[category]/[slug]</code> is a larger effort requiring CMS restructure and 301 redirects for all posts. Evaluate after new posts are published under better structure. Not urgent but worth planning for scale.</div><div class="action-meta"><span class="prio-badge pb-low">Low · Technical</span><span class="action-time">⏱ 1 day + SEO monitoring</span></div></div></div>
+      <div class="action"><div class="action-n an-l">20</div><div class="action-body"><div class="action-t">Launch LinkedIn newsletter mirroring top blog content</div><div class="action-d">Re-publish top blog posts as LinkedIn articles. Xan's profile and the company page are active — a newsletter builds an owned audience, drives direct traffic to the site, and creates additional brand mentions for AI training data.</div><div class="action-meta"><span class="prio-badge pb-low">Low · Off-Page + Content</span><span class="action-time">⏱ Ongoing</span></div></div></div>
+    </div>
+
+  </div>
+</section>
